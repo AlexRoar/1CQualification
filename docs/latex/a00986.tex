@@ -1,0 +1,60 @@
+\hypertarget{a00986}{}\doxysection{cxxopts\+::values\+::detail\+::Signed\+Check\texorpdfstring{$<$}{<} T, true \texorpdfstring{$>$}{>} Struct Template Reference}
+\label{a00986}\index{cxxopts::values::detail::SignedCheck$<$ T, true $>$@{cxxopts::values::detail::SignedCheck$<$ T, true $>$}}
+
+
+{\ttfamily \#include $<$cxxopts.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename U $>$ }\\void \mbox{\hyperlink{a00986_a03b02f6c1e500d96c8b8b13cbe858ce4}{operator()}} (bool negative, U u, const std\+::string \&text)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+struct cxxopts\+::values\+::detail\+::\+Signed\+Check$<$ T, true $>$}
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l00808}{808}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00986_a03b02f6c1e500d96c8b8b13cbe858ce4}\label{a00986_a03b02f6c1e500d96c8b8b13cbe858ce4}} 
+\index{cxxopts::values::detail::SignedCheck$<$ T, true $>$@{cxxopts::values::detail::SignedCheck$<$ T, true $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!cxxopts::values::detail::SignedCheck$<$ T, true $>$@{cxxopts::values::detail::SignedCheck$<$ T, true $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename U $>$ \\
+void \mbox{\hyperlink{a00982}{cxxopts\+::values\+::detail\+::\+Signed\+Check}}$<$ T, true $>$\+::operator() (\begin{DoxyParamCaption}\item[{bool}]{negative,  }\item[{U}]{u,  }\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l00812}{812}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00813                 \{}
+\DoxyCodeLine{00814                     \textcolor{keywordflow}{if} (negative)}
+\DoxyCodeLine{00815                     \{}
+\DoxyCodeLine{00816                         \textcolor{keywordflow}{if} (u > \textcolor{keyword}{static\_cast<}U\textcolor{keyword}{>}((std::numeric\_limits<T>::min)()))}
+\DoxyCodeLine{00817                         \{}
+\DoxyCodeLine{00818                             throw\_or\_mimic<argument\_incorrect\_type>(text);}
+\DoxyCodeLine{00819                         \}}
+\DoxyCodeLine{00820                     \}}
+\DoxyCodeLine{00821                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{00822                     \{}
+\DoxyCodeLine{00823                         \textcolor{keywordflow}{if} (u > \textcolor{keyword}{static\_cast<}U\textcolor{keyword}{>}((std::numeric\_limits<T>::max)()))}
+\DoxyCodeLine{00824                         \{}
+\DoxyCodeLine{00825                             throw\_or\_mimic<argument\_incorrect\_type>(text);}
+\DoxyCodeLine{00826                         \}}
+\DoxyCodeLine{00827                     \}}
+\DoxyCodeLine{00828                 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/utils/\mbox{\hyperlink{a00041}{cxxopts.\+hpp}}\end{DoxyCompactItemize}

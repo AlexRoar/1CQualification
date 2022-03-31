@@ -1,0 +1,19 @@
+digraph "StringMatch::details::STree::go"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  rankdir="RL";
+  Node1 [label="StringMatch::details\l::STree::go",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node2 [label="StringMatch::details\l::STree::get_link",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00894.html#a67c1cd8ad107a5d7855c9f29016ff252",tooltip=" "];
+  Node2 -> Node2 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node3 [label="StringMatch::details\l::STree::tree_extend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00894.html#a24c85e65f714be5b07874a3d95fdf8a1",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node4 [label="StringMatch::details\l::STree::build_tree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00894.html#a4ada1b74912366f01c9f298e426dc25c",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node5 [label="StringMatch::details\l::STree::STree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00894.html#ae6a9517acbc3452388fded61039bed84",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+}

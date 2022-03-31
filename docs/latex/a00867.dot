@@ -1,0 +1,20 @@
+digraph "StringMatch::LargeMatcher"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  Node1 [label="StringMatch::LargeMatcher",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Find occurances in file without loading the whole file into the memory."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node2 [label="StringMatch::MatcherInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00901.html",tooltip="Interface for string matching algorithm."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" file" ];
+  Node3 [label="std::ifstream",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node4 [label="std::basic_ifstream\l\< Char \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node5 [label="std::basic_istream\l\< Char \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node6 [label="std::basic_ios\< Char \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node7 [label="std::ios_base",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+}

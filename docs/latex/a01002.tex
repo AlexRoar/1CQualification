@@ -1,0 +1,613 @@
+\hypertarget{a01002}{}\doxysection{cxxopts\+::values\+::abstract\+\_\+value\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{a01002}\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+
+
+{\ttfamily \#include $<$cxxopts.\+hpp$>$}
+
+
+
+Inheritance diagram for cxxopts\+::values\+::abstract\+\_\+value\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+% FIG 0
+
+
+Collaboration diagram for cxxopts\+::values\+::abstract\+\_\+value\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a01002_abaf85af44d7de0d08508ea50c911062f}{abstract\+\_\+value}} ()
+\item 
+\mbox{\hyperlink{a01002_a512fb323456e370b1f7b784d57b55c25}{abstract\+\_\+value}} (const \mbox{\hyperlink{a01002}{abstract\+\_\+value}} \&rhs)
+\item 
+\mbox{\hyperlink{a01002_a578211778e2d3a3eb5c9f9a57b5b9cd1}{abstract\+\_\+value}} (T $\ast$t)
+\item 
+\mbox{\hyperlink{a01002_adeb790d413e867e47324d1a04ff9e601}{$\sim$abstract\+\_\+value}} () override=default
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00914}{Value}} $>$ \mbox{\hyperlink{a01002_a3bc6dc59f9bec5811bda3ca86a5ba22e}{default\+\_\+value}} (const std\+::string \&\mbox{\hyperlink{a00053_a6b58e451713ebbf12866c1cd8e0a66ab}{value}}) override
+\item 
+const T \& \mbox{\hyperlink{a01002_a13587e25582d606cd757d3ad5a4df3b9}{get}} () const
+\item 
+std\+::string \mbox{\hyperlink{a01002_a901928871ef3566e74f081d5ab9020aa}{get\+\_\+default\+\_\+value}} () const override
+\item 
+std\+::string \mbox{\hyperlink{a01002_a5e5aa0e29056c3daa7e5a1defd69f20f}{get\+\_\+implicit\+\_\+value}} () const override
+\item 
+bool \mbox{\hyperlink{a01002_a8ab35d0f85ed76406651b442f4094cb9}{has\+\_\+default}} () const override
+\item 
+bool \mbox{\hyperlink{a01002_af832b3696ce245e5b4c402ffc5af6155}{has\+\_\+implicit}} () const override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00914}{Value}} $>$ \mbox{\hyperlink{a01002_aac9bc16b6695a1b1aca9d87ed2c3261a}{implicit\+\_\+value}} (const std\+::string \&\mbox{\hyperlink{a00053_a6b58e451713ebbf12866c1cd8e0a66ab}{value}}) override
+\item 
+bool \mbox{\hyperlink{a01002_ac4a5f57c63086de1eac4cbefe09d99ce}{is\+\_\+boolean}} () const override
+\item 
+bool \mbox{\hyperlink{a01002_a1b7954bea9d4db388125d3427203dba8}{is\+\_\+container}} () const override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00914}{Value}} $>$ \mbox{\hyperlink{a01002_a286d315daba090046b6c72a6711d389d}{no\+\_\+implicit\+\_\+value}} () override
+\item 
+\mbox{\hyperlink{a01002}{abstract\+\_\+value}} \& \mbox{\hyperlink{a01002_ae7953d00c1885a9704dba9cbba166e4d}{operator=}} (const \mbox{\hyperlink{a01002}{abstract\+\_\+value}} \&)=default
+\item 
+void \mbox{\hyperlink{a01002_aa8dfcbbfb1f9b28261a3e4fa564a02c1}{parse}} () const override
+\item 
+void \mbox{\hyperlink{a01002_ad6599c6a72ae7903a7a9b6dda2f828cf}{parse}} (const std\+::string \&text) const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{a01002_ad16dfdf6856b66c4ed6b35edfade5218}{m\+\_\+default}} = false
+\item 
+std\+::string \mbox{\hyperlink{a01002_a0e3f038dc1c0aeab3e5c517d9e033ee4}{m\+\_\+default\+\_\+value}} \{\}
+\item 
+bool \mbox{\hyperlink{a01002_a3f9bdb2d94189ddf78eb5b338d5c33bc}{m\+\_\+implicit}} = false
+\item 
+std\+::string \mbox{\hyperlink{a01002_a69ed02e5ce2c431fad801ed5bb1cde26}{m\+\_\+implicit\+\_\+value}} \{\}
+\item 
+std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{a01002_a0df330cac57a96d7ac25dd6a666d5b94}{m\+\_\+result}} \{\}
+\item 
+T $\ast$ \mbox{\hyperlink{a01002_ab5b256909ddbb516bd46d197dadf073e}{m\+\_\+store}} \{\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{a01002_a6b8c97ae22663547247602545e8a1cf9}{Self}} = \mbox{\hyperlink{a01002}{abstract\+\_\+value}}$<$ T $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$}
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01030}{1030}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{a01002_a6b8c97ae22663547247602545e8a1cf9}\label{a01002_a6b8c97ae22663547247602545e8a1cf9}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!Self@{Self}}
+\index{Self@{Self}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Self}{Self}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+using \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::\+Self =  \mbox{\hyperlink{a01002}{abstract\+\_\+value}}$<$T$>$\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01032}{1032}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a01002_abaf85af44d7de0d08508ea50c911062f}\label{a01002_abaf85af44d7de0d08508ea50c911062f}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!abstract\_value@{abstract\_value}}
+\index{abstract\_value@{abstract\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{abstract\_value()}{abstract\_value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::abstract\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01035}{1035}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01036                     : \mbox{\hyperlink{a01002_a0df330cac57a96d7ac25dd6a666d5b94}{m\_result}}(std::make\_shared<T>())}
+\DoxyCodeLine{01037                     , \mbox{\hyperlink{a01002_ab5b256909ddbb516bd46d197dadf073e}{m\_store}}(\mbox{\hyperlink{a01002_a0df330cac57a96d7ac25dd6a666d5b94}{m\_result}}.get())}
+\DoxyCodeLine{01038             \{}
+\DoxyCodeLine{01039             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a01002_a578211778e2d3a3eb5c9f9a57b5b9cd1}\label{a01002_a578211778e2d3a3eb5c9f9a57b5b9cd1}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!abstract\_value@{abstract\_value}}
+\index{abstract\_value@{abstract\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{abstract\_value()}{abstract\_value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::abstract\+\_\+value (\begin{DoxyParamCaption}\item[{T $\ast$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01041}{1041}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01042                     : \mbox{\hyperlink{a01002_ab5b256909ddbb516bd46d197dadf073e}{m\_store}}(t)}
+\DoxyCodeLine{01043             \{}
+\DoxyCodeLine{01044             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a01002_adeb790d413e867e47324d1a04ff9e601}\label{a01002_adeb790d413e867e47324d1a04ff9e601}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!````~abstract\_value@{$\sim$abstract\_value}}
+\index{````~abstract\_value@{$\sim$abstract\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$abstract\_value()}{~abstract\_value()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{a01002}{abstract\+\_\+value}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{a01002_a512fb323456e370b1f7b784d57b55c25}\label{a01002_a512fb323456e370b1f7b784d57b55c25}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!abstract\_value@{abstract\_value}}
+\index{abstract\_value@{abstract\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{abstract\_value()}{abstract\_value()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::abstract\+\_\+value (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a01002}{abstract\+\_\+value}}$<$ T $>$ \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01050}{1050}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01051             \{}
+\DoxyCodeLine{01052                 \textcolor{keywordflow}{if} (rhs.m\_result)}
+\DoxyCodeLine{01053                 \{}
+\DoxyCodeLine{01054                     \mbox{\hyperlink{a01002_a0df330cac57a96d7ac25dd6a666d5b94}{m\_result}} = std::make\_shared<T>();}
+\DoxyCodeLine{01055                     \mbox{\hyperlink{a01002_ab5b256909ddbb516bd46d197dadf073e}{m\_store}} = \mbox{\hyperlink{a01002_a0df330cac57a96d7ac25dd6a666d5b94}{m\_result}}.get();}
+\DoxyCodeLine{01056                 \}}
+\DoxyCodeLine{01057                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{01058                 \{}
+\DoxyCodeLine{01059                     \mbox{\hyperlink{a01002_ab5b256909ddbb516bd46d197dadf073e}{m\_store}} = rhs.m\_store;}
+\DoxyCodeLine{01060                 \}}
+\DoxyCodeLine{01061 }
+\DoxyCodeLine{01062                 \mbox{\hyperlink{a01002_ad16dfdf6856b66c4ed6b35edfade5218}{m\_default}} = rhs.m\_default;}
+\DoxyCodeLine{01063                 \mbox{\hyperlink{a01002_a3f9bdb2d94189ddf78eb5b338d5c33bc}{m\_implicit}} = rhs.m\_implicit;}
+\DoxyCodeLine{01064                 \mbox{\hyperlink{a01002_a0e3f038dc1c0aeab3e5c517d9e033ee4}{m\_default\_value}} = rhs.m\_default\_value;}
+\DoxyCodeLine{01065                 \mbox{\hyperlink{a01002_a69ed02e5ce2c431fad801ed5bb1cde26}{m\_implicit\_value}} = rhs.m\_implicit\_value;}
+\DoxyCodeLine{01066             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01153}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+default}}, \mbox{\hyperlink{a00041_source_l01156}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+default\+\_\+value}}, \mbox{\hyperlink{a00041_source_l01154}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+implicit}}, \mbox{\hyperlink{a00041_source_l01157}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+implicit\+\_\+value}}, \mbox{\hyperlink{a00041_source_l01150}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+result}}, and \mbox{\hyperlink{a00041_source_l01151}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+store}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a01002_a3bc6dc59f9bec5811bda3ca86a5ba22e}\label{a01002_a3bc6dc59f9bec5811bda3ca86a5ba22e}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!default\_value@{default\_value}}
+\index{default\_value@{default\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{default\_value()}{default\_value()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00914}{Value}} $>$ \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::default\+\_\+value (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_a96cc46d76d458baf37099cd94cf4e857}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01099}{1099}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01100             \{}
+\DoxyCodeLine{01101                 \mbox{\hyperlink{a01002_ad16dfdf6856b66c4ed6b35edfade5218}{m\_default}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{01102                 \mbox{\hyperlink{a01002_a0e3f038dc1c0aeab3e5c517d9e033ee4}{m\_default\_value}} = \mbox{\hyperlink{a00053_a6b58e451713ebbf12866c1cd8e0a66ab}{value}};}
+\DoxyCodeLine{01103                 \textcolor{keywordflow}{return} shared\_from\_this();}
+\DoxyCodeLine{01104             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01153}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+default}}, \mbox{\hyperlink{a00041_source_l01156}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+default\+\_\+value}}, and \mbox{\hyperlink{a00041_source_l01212}{cxxopts\+::value()}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+\mbox{\Hypertarget{a01002_a13587e25582d606cd757d3ad5a4df3b9}\label{a01002_a13587e25582d606cd757d3ad5a4df3b9}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!get@{get}}
+\index{get@{get}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const T \& \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01140}{1140}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01141             \{}
+\DoxyCodeLine{01142                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{a01002_ab5b256909ddbb516bd46d197dadf073e}{m\_store}} == \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{01143                 \{}
+\DoxyCodeLine{01144                     \textcolor{keywordflow}{return} *\mbox{\hyperlink{a01002_a0df330cac57a96d7ac25dd6a666d5b94}{m\_result}};}
+\DoxyCodeLine{01145                 \}}
+\DoxyCodeLine{01146                 \textcolor{keywordflow}{return} *\mbox{\hyperlink{a01002_ab5b256909ddbb516bd46d197dadf073e}{m\_store}};}
+\DoxyCodeLine{01147             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01150}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+result}}, and \mbox{\hyperlink{a00041_source_l01151}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+store}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l01382}{cxxopts\+::\+Option\+Value\+::as()}}.
+
+Here is the caller graph for this function\+:
+% FIG 3
+\mbox{\Hypertarget{a01002_a901928871ef3566e74f081d5ab9020aa}\label{a01002_a901928871ef3566e74f081d5ab9020aa}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!get\_default\_value@{get\_default\_value}}
+\index{get\_default\_value@{get\_default\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get\_default\_value()}{get\_default\_value()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::string \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::get\+\_\+default\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_a25ac95c499771a6f5ca295e01452f380}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01122}{1122}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01123             \{}
+\DoxyCodeLine{01124                 \textcolor{keywordflow}{return} \mbox{\hyperlink{a01002_a0e3f038dc1c0aeab3e5c517d9e033ee4}{m\_default\_value}};}
+\DoxyCodeLine{01125             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01156}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+default\+\_\+value}}.
+
+\mbox{\Hypertarget{a01002_a5e5aa0e29056c3daa7e5a1defd69f20f}\label{a01002_a5e5aa0e29056c3daa7e5a1defd69f20f}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!get\_implicit\_value@{get\_implicit\_value}}
+\index{get\_implicit\_value@{get\_implicit\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get\_implicit\_value()}{get\_implicit\_value()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::string \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::get\+\_\+implicit\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_a436f0a8a6621de420088839f4c728230}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01128}{1128}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01129             \{}
+\DoxyCodeLine{01130                 \textcolor{keywordflow}{return} \mbox{\hyperlink{a01002_a69ed02e5ce2c431fad801ed5bb1cde26}{m\_implicit\_value}};}
+\DoxyCodeLine{01131             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01157}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+implicit\+\_\+value}}.
+
+\mbox{\Hypertarget{a01002_a8ab35d0f85ed76406651b442f4094cb9}\label{a01002_a8ab35d0f85ed76406651b442f4094cb9}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!has\_default@{has\_default}}
+\index{has\_default@{has\_default}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{has\_default()}{has\_default()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::has\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_aac3233a0414ac39d54ed0b98365afc7e}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01087}{1087}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01088             \{}
+\DoxyCodeLine{01089                 \textcolor{keywordflow}{return} \mbox{\hyperlink{a01002_ad16dfdf6856b66c4ed6b35edfade5218}{m\_default}};}
+\DoxyCodeLine{01090             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01153}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+default}}.
+
+\mbox{\Hypertarget{a01002_af832b3696ce245e5b4c402ffc5af6155}\label{a01002_af832b3696ce245e5b4c402ffc5af6155}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!has\_implicit@{has\_implicit}}
+\index{has\_implicit@{has\_implicit}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{has\_implicit()}{has\_implicit()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::has\+\_\+implicit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_aac3425b87db8ef41157892449999b183}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01093}{1093}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01094             \{}
+\DoxyCodeLine{01095                 \textcolor{keywordflow}{return} \mbox{\hyperlink{a01002_a3f9bdb2d94189ddf78eb5b338d5c33bc}{m\_implicit}};}
+\DoxyCodeLine{01096             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01154}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+implicit}}.
+
+\mbox{\Hypertarget{a01002_aac9bc16b6695a1b1aca9d87ed2c3261a}\label{a01002_aac9bc16b6695a1b1aca9d87ed2c3261a}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!implicit\_value@{implicit\_value}}
+\index{implicit\_value@{implicit\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{implicit\_value()}{implicit\_value()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00914}{Value}} $>$ \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::implicit\+\_\+value (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_adf963773eb53a7af1bc8cb97a517b27e}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01107}{1107}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01108             \{}
+\DoxyCodeLine{01109                 \mbox{\hyperlink{a01002_a3f9bdb2d94189ddf78eb5b338d5c33bc}{m\_implicit}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{01110                 \mbox{\hyperlink{a01002_a69ed02e5ce2c431fad801ed5bb1cde26}{m\_implicit\_value}} = \mbox{\hyperlink{a00053_a6b58e451713ebbf12866c1cd8e0a66ab}{value}};}
+\DoxyCodeLine{01111                 \textcolor{keywordflow}{return} shared\_from\_this();}
+\DoxyCodeLine{01112             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01154}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+implicit}}, \mbox{\hyperlink{a00041_source_l01157}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+implicit\+\_\+value}}, and \mbox{\hyperlink{a00041_source_l01212}{cxxopts\+::value()}}.
+
+Here is the call graph for this function\+:
+% FIG 4
+\mbox{\Hypertarget{a01002_ac4a5f57c63086de1eac4cbefe09d99ce}\label{a01002_ac4a5f57c63086de1eac4cbefe09d99ce}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!is\_boolean@{is\_boolean}}
+\index{is\_boolean@{is\_boolean}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{is\_boolean()}{is\_boolean()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::is\+\_\+boolean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_a77a4a731bcbbd95afca43f82affe5aaa}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01134}{1134}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01135             \{}
+\DoxyCodeLine{01136                 \textcolor{keywordflow}{return} \mbox{\hyperlink{a00053_a9a3c999d4e9bd55dec5daa5daef79c26}{std::is\_same<T, bool>::value}};}
+\DoxyCodeLine{01137             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01219}{cxxopts\+::value()}}.
+
+Here is the call graph for this function\+:
+% FIG 5
+\mbox{\Hypertarget{a01002_a1b7954bea9d4db388125d3427203dba8}\label{a01002_a1b7954bea9d4db388125d3427203dba8}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!is\_container@{is\_container}}
+\index{is\_container@{is\_container}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{is\_container()}{is\_container()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::is\+\_\+container (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_a632f3263dd598e30999a6bcff0652132}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01075}{1075}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01076             \{}
+\DoxyCodeLine{01077                 \textcolor{keywordflow}{return} \mbox{\hyperlink{a00994_a7f4d1663c787047542c5033e6d3096f9}{type\_is\_container<T>::value}};}
+\DoxyCodeLine{01078             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a01002_a286d315daba090046b6c72a6711d389d}\label{a01002_a286d315daba090046b6c72a6711d389d}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!no\_implicit\_value@{no\_implicit\_value}}
+\index{no\_implicit\_value@{no\_implicit\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{no\_implicit\_value()}{no\_implicit\_value()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{a00914}{Value}} $>$ \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::no\+\_\+implicit\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_a4bba2137fbc7ee9c670a64e552ac05fe}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01115}{1115}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01116             \{}
+\DoxyCodeLine{01117                 \mbox{\hyperlink{a01002_a3f9bdb2d94189ddf78eb5b338d5c33bc}{m\_implicit}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{01118                 \textcolor{keywordflow}{return} shared\_from\_this();}
+\DoxyCodeLine{01119             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01154}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+implicit}}.
+
+\mbox{\Hypertarget{a01002_ae7953d00c1885a9704dba9cbba166e4d}\label{a01002_ae7953d00c1885a9704dba9cbba166e4d}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{a01002}{abstract\+\_\+value}} \& \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a01002}{abstract\+\_\+value}}$<$ T $>$ \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{a01002_aa8dfcbbfb1f9b28261a3e4fa564a02c1}\label{a01002_aa8dfcbbfb1f9b28261a3e4fa564a02c1}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!parse@{parse}}
+\index{parse@{parse}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_a9246a55e299ea5ef34346af46977fab4}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01081}{1081}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01082             \{}
+\DoxyCodeLine{01083                 \mbox{\hyperlink{a00055_a9782d53713f30ced7138719bd966db2b}{parse\_value}}(\mbox{\hyperlink{a01002_a0e3f038dc1c0aeab3e5c517d9e033ee4}{m\_default\_value}}, *\mbox{\hyperlink{a01002_ab5b256909ddbb516bd46d197dadf073e}{m\_store}});}
+\DoxyCodeLine{01084             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01156}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+default\+\_\+value}}, \mbox{\hyperlink{a00041_source_l01151}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+store}}, and \mbox{\hyperlink{a00041_source_l00934}{cxxopts\+::values\+::parse\+\_\+value()}}.
+
+Here is the call graph for this function\+:
+% FIG 6
+\mbox{\Hypertarget{a01002_ad6599c6a72ae7903a7a9b6dda2f828cf}\label{a01002_ad6599c6a72ae7903a7a9b6dda2f828cf}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!parse@{parse}}
+\index{parse@{parse}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::parse (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{a00914_a3c962e4ff3294721f5c9f6ac3fc00cc7}{cxxopts\+::\+Value}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01069}{1069}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01070             \{}
+\DoxyCodeLine{01071                 \mbox{\hyperlink{a00055_a9782d53713f30ced7138719bd966db2b}{parse\_value}}(text, *\mbox{\hyperlink{a01002_ab5b256909ddbb516bd46d197dadf073e}{m\_store}});}
+\DoxyCodeLine{01072             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01151}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::m\+\_\+store}}, and \mbox{\hyperlink{a00041_source_l00934}{cxxopts\+::values\+::parse\+\_\+value()}}.
+
+Here is the call graph for this function\+:
+% FIG 7
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a01002_ad16dfdf6856b66c4ed6b35edfade5218}\label{a01002_ad16dfdf6856b66c4ed6b35edfade5218}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!m\_default@{m\_default}}
+\index{m\_default@{m\_default}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_default}{m\_default}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::m\+\_\+default = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01153}{1153}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l01050}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::abstract\+\_\+value()}}, \mbox{\hyperlink{a00041_source_l01099}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::default\+\_\+value()}}, \mbox{\hyperlink{a00041_source_l01087}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::has\+\_\+default()}}, and \mbox{\hyperlink{a00041_source_l01200}{cxxopts\+::values\+::standard\+\_\+value$<$ bool $>$\+::set\+\_\+default\+\_\+and\+\_\+implicit()}}.
+
+\mbox{\Hypertarget{a01002_a0e3f038dc1c0aeab3e5c517d9e033ee4}\label{a01002_a0e3f038dc1c0aeab3e5c517d9e033ee4}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!m\_default\_value@{m\_default\_value}}
+\index{m\_default\_value@{m\_default\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_default\_value}{m\_default\_value}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::string \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::m\+\_\+default\+\_\+value \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01156}{1156}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l01050}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::abstract\+\_\+value()}}, \mbox{\hyperlink{a00041_source_l01099}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::default\+\_\+value()}}, \mbox{\hyperlink{a00041_source_l01122}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::get\+\_\+default\+\_\+value()}}, \mbox{\hyperlink{a00041_source_l01081}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::parse()}}, and \mbox{\hyperlink{a00041_source_l01200}{cxxopts\+::values\+::standard\+\_\+value$<$ bool $>$\+::set\+\_\+default\+\_\+and\+\_\+implicit()}}.
+
+\mbox{\Hypertarget{a01002_a3f9bdb2d94189ddf78eb5b338d5c33bc}\label{a01002_a3f9bdb2d94189ddf78eb5b338d5c33bc}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!m\_implicit@{m\_implicit}}
+\index{m\_implicit@{m\_implicit}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_implicit}{m\_implicit}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+bool \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::m\+\_\+implicit = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01154}{1154}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l01050}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::abstract\+\_\+value()}}, \mbox{\hyperlink{a00041_source_l01093}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::has\+\_\+implicit()}}, \mbox{\hyperlink{a00041_source_l01107}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::implicit\+\_\+value()}}, \mbox{\hyperlink{a00041_source_l01115}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::no\+\_\+implicit\+\_\+value()}}, and \mbox{\hyperlink{a00041_source_l01200}{cxxopts\+::values\+::standard\+\_\+value$<$ bool $>$\+::set\+\_\+default\+\_\+and\+\_\+implicit()}}.
+
+\mbox{\Hypertarget{a01002_a69ed02e5ce2c431fad801ed5bb1cde26}\label{a01002_a69ed02e5ce2c431fad801ed5bb1cde26}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!m\_implicit\_value@{m\_implicit\_value}}
+\index{m\_implicit\_value@{m\_implicit\_value}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_implicit\_value}{m\_implicit\_value}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::string \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::m\+\_\+implicit\+\_\+value \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01157}{1157}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l01050}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::abstract\+\_\+value()}}, \mbox{\hyperlink{a00041_source_l01128}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::get\+\_\+implicit\+\_\+value()}}, \mbox{\hyperlink{a00041_source_l01107}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::implicit\+\_\+value()}}, and \mbox{\hyperlink{a00041_source_l01200}{cxxopts\+::values\+::standard\+\_\+value$<$ bool $>$\+::set\+\_\+default\+\_\+and\+\_\+implicit()}}.
+
+\mbox{\Hypertarget{a01002_a0df330cac57a96d7ac25dd6a666d5b94}\label{a01002_a0df330cac57a96d7ac25dd6a666d5b94}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!m\_result@{m\_result}}
+\index{m\_result@{m\_result}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_result}{m\_result}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::shared\+\_\+ptr$<$T$>$ \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::m\+\_\+result \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01150}{1150}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l01050}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::abstract\+\_\+value()}}, and \mbox{\hyperlink{a00041_source_l01140}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::get()}}.
+
+\mbox{\Hypertarget{a01002_ab5b256909ddbb516bd46d197dadf073e}\label{a01002_ab5b256909ddbb516bd46d197dadf073e}} 
+\index{cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}!m\_store@{m\_store}}
+\index{m\_store@{m\_store}!cxxopts::values::abstract\_value$<$ T $>$@{cxxopts::values::abstract\_value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{m\_store}{m\_store}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T$\ast$ \mbox{\hyperlink{a01002}{cxxopts\+::values\+::abstract\+\_\+value}}$<$ T $>$\+::m\+\_\+store \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01151}{1151}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l01050}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::abstract\+\_\+value()}}, \mbox{\hyperlink{a00041_source_l01140}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::get()}}, and \mbox{\hyperlink{a00041_source_l01069}{cxxopts\+::values\+::abstract\+\_\+value$<$ T $>$\+::parse()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/utils/\mbox{\hyperlink{a00041}{cxxopts.\+hpp}}\end{DoxyCompactItemize}

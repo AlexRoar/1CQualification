@@ -1,0 +1,145 @@
+\hypertarget{a00865}{}\doxysection{String\+Match\+::General\+Searcher Class Reference}
+\label{a00865}\index{StringMatch::GeneralSearcher@{StringMatch::GeneralSearcher}}
+
+
+Searches for multiple occurrences of pattern in string Utilizes KMP algorithm.  
+
+
+
+
+{\ttfamily \#include $<$General\+Searcher.\+h$>$}
+
+
+
+Inheritance diagram for String\+Match\+::General\+Searcher\+:
+% FIG 0
+
+
+Collaboration diagram for String\+Match\+::General\+Searcher\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00865_af4455be373fc7cbb3ca1b0cd4656ef87}{General\+Searcher}} (const std\+::string\+\_\+view \&\mbox{\hyperlink{a00865_aad581f2c2d0d95226892c55022ca5652}{text}})
+\begin{DoxyCompactList}\small\item\em Complexity\+: O(1) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00865_a5e06e9eb7dc7e8b902fd4a063566f85c}{$\sim$\+General\+Searcher}} () override=default
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{a00865_a374076af653dd977dad6adc61ee47d89}{get\+Entrances}} (const std\+::string \&pattern) override
+\begin{DoxyCompactList}\small\item\em Complexity\+: O($\vert$text$\vert$ + $\vert$pattern$\vert$) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string\+\_\+view \& \mbox{\hyperlink{a00865_aad581f2c2d0d95226892c55022ca5652}{text}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Searches for multiple occurrences of pattern in string Utilizes KMP algorithm. 
+
+Definition at line \mbox{\hyperlink{a00017_source_l00014}{14}} of file \mbox{\hyperlink{a00017_source}{General\+Searcher.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00865_af4455be373fc7cbb3ca1b0cd4656ef87}\label{a00865_af4455be373fc7cbb3ca1b0cd4656ef87}} 
+\index{StringMatch::GeneralSearcher@{StringMatch::GeneralSearcher}!GeneralSearcher@{GeneralSearcher}}
+\index{GeneralSearcher@{GeneralSearcher}!StringMatch::GeneralSearcher@{StringMatch::GeneralSearcher}}
+\doxysubsubsection{\texorpdfstring{GeneralSearcher()}{GeneralSearcher()}}
+{\footnotesize\ttfamily String\+Match\+::\+General\+Searcher\+::\+General\+Searcher (\begin{DoxyParamCaption}\item[{const std\+::string\+\_\+view \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Complexity\+: O(1) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & text to be used \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{a00008_source_l00013}{13}} of file \mbox{\hyperlink{a00008_source}{General\+Searcher.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00014             : \mbox{\hyperlink{a00865_aad581f2c2d0d95226892c55022ca5652}{text}}(\mbox{\hyperlink{a00865_aad581f2c2d0d95226892c55022ca5652}{text}}) \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a00865_a5e06e9eb7dc7e8b902fd4a063566f85c}\label{a00865_a5e06e9eb7dc7e8b902fd4a063566f85c}} 
+\index{StringMatch::GeneralSearcher@{StringMatch::GeneralSearcher}!````~GeneralSearcher@{$\sim$GeneralSearcher}}
+\index{````~GeneralSearcher@{$\sim$GeneralSearcher}!StringMatch::GeneralSearcher@{StringMatch::GeneralSearcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$GeneralSearcher()}{~GeneralSearcher()}}
+{\footnotesize\ttfamily String\+Match\+::\+General\+Searcher\+::$\sim$\+General\+Searcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00865_a374076af653dd977dad6adc61ee47d89}\label{a00865_a374076af653dd977dad6adc61ee47d89}} 
+\index{StringMatch::GeneralSearcher@{StringMatch::GeneralSearcher}!getEntrances@{getEntrances}}
+\index{getEntrances@{getEntrances}!StringMatch::GeneralSearcher@{StringMatch::GeneralSearcher}}
+\doxysubsubsection{\texorpdfstring{getEntrances()}{getEntrances()}}
+{\footnotesize\ttfamily std\+::vector$<$ size\+\_\+t $>$ String\+Match\+::\+General\+Searcher\+::get\+Entrances (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Complexity\+: O($\vert$text$\vert$ + $\vert$pattern$\vert$) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & pattern to search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+indexes of all entries 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{a00901_a94fb8fd79594c34846a0755174df1e80}{String\+Match\+::\+Matcher\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00008_source_l00016}{16}} of file \mbox{\hyperlink{a00008_source}{General\+Searcher.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016                                                                             \{}
+\DoxyCodeLine{00017         details::KMP kmp(this-\/>\mbox{\hyperlink{a00865_aad581f2c2d0d95226892c55022ca5652}{text}});}
+\DoxyCodeLine{00018         \textcolor{keywordflow}{return} kmp.getEntrances(pattern);}
+\DoxyCodeLine{00019     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00035_source_l00032}{String\+Match\+::details\+::\+KMP\+::get\+Entrances()}}, and \mbox{\hyperlink{a00017_source_l00032}{text}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l00018}{String\+Match\+::\+String\+Matcher\+::get\+Entrances()}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+Here is the caller graph for this function\+:
+% FIG 3
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00865_aad581f2c2d0d95226892c55022ca5652}\label{a00865_aad581f2c2d0d95226892c55022ca5652}} 
+\index{StringMatch::GeneralSearcher@{StringMatch::GeneralSearcher}!text@{text}}
+\index{text@{text}!StringMatch::GeneralSearcher@{StringMatch::GeneralSearcher}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily const std\+::string\+\_\+view\& String\+Match\+::\+General\+Searcher\+::text\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00017_source_l00032}{32}} of file \mbox{\hyperlink{a00017_source}{General\+Searcher.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00008_source_l00016}{get\+Entrances()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/algo/\mbox{\hyperlink{a00017}{General\+Searcher.\+h}}\item 
+src/core/algo/\mbox{\hyperlink{a00008}{General\+Searcher.\+cpp}}\end{DoxyCompactItemize}

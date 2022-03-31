@@ -1,0 +1,53 @@
+\hypertarget{a00970}{}\doxysection{cxxopts\+::option\+\_\+required\+\_\+exception Class Reference}
+\label{a00970}\index{cxxopts::option\_required\_exception@{cxxopts::option\_required\_exception}}
+
+
+{\ttfamily \#include $<$cxxopts.\+hpp$>$}
+
+
+
+Inheritance diagram for cxxopts\+::option\+\_\+required\+\_\+exception\+:
+% FIG 0
+
+
+Collaboration diagram for cxxopts\+::option\+\_\+required\+\_\+exception\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00970_a0f7af231cec958b7912b0b010351584f}{option\+\_\+required\+\_\+exception}} (const std\+::string \&option)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l00518}{518}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00970_a0f7af231cec958b7912b0b010351584f}\label{a00970_a0f7af231cec958b7912b0b010351584f}} 
+\index{cxxopts::option\_required\_exception@{cxxopts::option\_required\_exception}!option\_required\_exception@{option\_required\_exception}}
+\index{option\_required\_exception@{option\_required\_exception}!cxxopts::option\_required\_exception@{cxxopts::option\_required\_exception}}
+\doxysubsubsection{\texorpdfstring{option\_required\_exception()}{option\_required\_exception()}}
+{\footnotesize\ttfamily cxxopts\+::option\+\_\+required\+\_\+exception\+::option\+\_\+required\+\_\+exception (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{option }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l00521}{521}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00522                 : \mbox{\hyperlink{a00926_a5a29d9742ef8d0edc05c46d942debd05}{OptionParseException}}(}
+\DoxyCodeLine{00523                 \textcolor{stringliteral}{"{}Option "{}} + LQUOTE + option + RQUOTE + \textcolor{stringliteral}{"{} is required but not present"{}}}
+\DoxyCodeLine{00524         )}
+\DoxyCodeLine{00525         \{}
+\DoxyCodeLine{00526         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/utils/\mbox{\hyperlink{a00041}{cxxopts.\+hpp}}\end{DoxyCompactItemize}

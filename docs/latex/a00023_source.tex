@@ -1,0 +1,29 @@
+\hypertarget{a00023_source}{}\doxysection{Small\+Searcher.\+h}
+\label{a00023_source}\index{src/core/algo/SmallSearcher.h@{src/core/algo/SmallSearcher.h}}
+\mbox{\hyperlink{a00023}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00002}00002 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00003}00003 \textcolor{comment}{// Created by Alex Dremov on 31.03.2022.}}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{a00023_source_l00006}00006 \textcolor{preprocessor}{\#include <string\_view>}}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{a00044}{interfaces/MatcherInterface.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{a00023_source_l00009}00009 \textcolor{keyword}{namespace }\mbox{\hyperlink{a00048}{StringMatch}} \{}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00014}\mbox{\hyperlink{a00877}{00014}}     \textcolor{keyword}{class }\mbox{\hyperlink{a00877}{SmallSearcher}} : \textcolor{keyword}{public} \mbox{\hyperlink{a00901}{MatcherInterface}} \{}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00015}00015     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00020}00020         \textcolor{keyword}{explicit} \mbox{\hyperlink{a00877_a924a12616debdd0c9bdef2d90cf6b79d}{SmallSearcher}}(\textcolor{keyword}{const} std::string\_view \&\mbox{\hyperlink{a00877_a948eea43f552919ca8e2796e8ac54aa2}{text}});}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{a00023_source_l00027}00027         std::vector<size\_t> \mbox{\hyperlink{a00877_a14bb2e34d3313c1a6ba984055dd71f92}{getEntrances}}(\textcolor{keyword}{const} std::string \&pattern) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{a00023_source_l00029}\mbox{\hyperlink{a00877_a90e88ee64f48ac49f5f3be2949a4f012}{00029}}         \mbox{\hyperlink{a00877_a90e88ee64f48ac49f5f3be2949a4f012}{\string~SmallSearcher}}() \textcolor{keyword}{override} = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00030}00030     \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00037}00037         \textcolor{keyword}{template}<\textcolor{keyword}{typename} T>}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00038}00038         std::vector<size\_t> \mbox{\hyperlink{a00877_af93f84121ed38f57fcd21c504ac36d94}{searchBatched}}(\textcolor{keyword}{const} std::string \&pattern);}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{a00023_source_l00040}\mbox{\hyperlink{a00877_a948eea43f552919ca8e2796e8ac54aa2}{00040}}         \textcolor{keyword}{const} std::string\_view \mbox{\hyperlink{a00877_a948eea43f552919ca8e2796e8ac54aa2}{text}};}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00041}00041     \};}
+\DoxyCodeLine{\Hypertarget{a00023_source_l00042}00042 \}}
+
+\end{DoxyCode}

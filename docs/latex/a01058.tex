@@ -1,0 +1,62 @@
+\hypertarget{a01058}{}\doxysection{String\+Match\+::Matcher\+Interface Class Reference}
+\label{a01058}\index{StringMatch::MatcherInterface@{StringMatch::MatcherInterface}}
+
+
+Interface for string matching algorithm.  
+
+
+
+
+{\ttfamily \#include $<$Matcher\+Interface.\+h$>$}
+
+
+
+Inheritance diagram for String\+Match\+::Matcher\+Interface\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{a01058_a19c970545173c46599af27383a27628d}{$\sim$\+Matcher\+Interface}} ()=default
+\item 
+virtual std\+::vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{a01058_a94fb8fd79594c34846a0755174df1e80}{get\+Entrances}} (const std\+::string \&pattern)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for string matching algorithm. 
+
+Definition at line \mbox{\hyperlink{a00047_source_l00012}{12}} of file \mbox{\hyperlink{a00047_source}{Matcher\+Interface.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a01058_a19c970545173c46599af27383a27628d}\label{a01058_a19c970545173c46599af27383a27628d}} 
+\index{StringMatch::MatcherInterface@{StringMatch::MatcherInterface}!````~MatcherInterface@{$\sim$MatcherInterface}}
+\index{````~MatcherInterface@{$\sim$MatcherInterface}!StringMatch::MatcherInterface@{StringMatch::MatcherInterface}}
+\doxysubsubsection{\texorpdfstring{$\sim$MatcherInterface()}{~MatcherInterface()}}
+{\footnotesize\ttfamily virtual String\+Match\+::\+Matcher\+Interface\+::$\sim$\+Matcher\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a01058_a94fb8fd79594c34846a0755174df1e80}\label{a01058_a94fb8fd79594c34846a0755174df1e80}} 
+\index{StringMatch::MatcherInterface@{StringMatch::MatcherInterface}!getEntrances@{getEntrances}}
+\index{getEntrances@{getEntrances}!StringMatch::MatcherInterface@{StringMatch::MatcherInterface}}
+\doxysubsubsection{\texorpdfstring{getEntrances()}{getEntrances()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$ size\+\_\+t $>$ String\+Match\+::\+Matcher\+Interface\+::get\+Entrances (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{a00874_a374076af653dd977dad6adc61ee47d89}{String\+Match\+::\+General\+Searcher}}, \mbox{\hyperlink{a00878_a23c48758e7997fa39fcc22cc72f9d444}{String\+Match\+::\+Large\+Matcher}}, \mbox{\hyperlink{a00882_a7f8d5ec0414e019e7fe0b45ebdacd7fb}{String\+Match\+::\+Single\+Searcher}}, \mbox{\hyperlink{a00886_a14bb2e34d3313c1a6ba984055dd71f92}{String\+Match\+::\+Small\+Searcher}}, and \mbox{\hyperlink{a00906_a5954f674b0cfd1ddf5722a535075ce7f}{String\+Match\+::\+String\+Matcher}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00044_source_l00018}{String\+Match\+::\+String\+Matcher\+::get\+Entrances()}}.
+
+Here is the caller graph for this function\+:
+% FIG 1
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/interfaces/\mbox{\hyperlink{a00047}{Matcher\+Interface.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,104 @@
+\hypertarget{a01042}{}\doxysection{cxxopts\+::Option Struct Reference}
+\label{a01042}\index{cxxopts::Option@{cxxopts::Option}}
+
+
+{\ttfamily \#include $<$cxxopts.\+hpp$>$}
+
+
+
+Collaboration diagram for cxxopts\+::Option\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a01042_a9e4d1f0faf8bbcd414f20b08cfac8e70}{Option}} (std\+::string opts, std\+::string desc, std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{a00914}{Value}} $>$ \mbox{\hyperlink{a00053_a6b58e451713ebbf12866c1cd8e0a66ab}{value}}=\+::cxxopts\+::value$<$ bool $>$(), std\+::string arg\+\_\+help=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{a01042_adde04f86cc5d1e5ee2acdf401d1c0e54}{arg\+\_\+help\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{a01042_af7e90af1a125c138802e576225ecb675}{desc\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{a01042_af5408ed9c7f5d322a8f4925aa337fa3e}{opts\+\_\+}}
+\item 
+std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{a00914}{Value}} $>$ \mbox{\hyperlink{a01042_a15377ffd237b0a9c5eb81fd632d7c1fb}{value\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01627}{1627}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a01042_a9e4d1f0faf8bbcd414f20b08cfac8e70}\label{a01042_a9e4d1f0faf8bbcd414f20b08cfac8e70}} 
+\index{cxxopts::Option@{cxxopts::Option}!Option@{Option}}
+\index{Option@{Option}!cxxopts::Option@{cxxopts::Option}}
+\doxysubsubsection{\texorpdfstring{Option()}{Option()}}
+{\footnotesize\ttfamily cxxopts\+::\+Option\+::\+Option (\begin{DoxyParamCaption}\item[{std\+::string}]{opts,  }\item[{std\+::string}]{desc,  }\item[{std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{a00914}{Value}} $>$}]{value = {\ttfamily \+:\+:cxxopts\+:\+:value$<$bool$>$()},  }\item[{std\+::string}]{arg\+\_\+help = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01629}{1629}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01636                 : \mbox{\hyperlink{a01042_af5408ed9c7f5d322a8f4925aa337fa3e}{opts\_}}(std::move(opts))}
+\DoxyCodeLine{01637                 , \mbox{\hyperlink{a01042_af7e90af1a125c138802e576225ecb675}{desc\_}}(std::move(desc))}
+\DoxyCodeLine{01638                 , \mbox{\hyperlink{a01042_a15377ffd237b0a9c5eb81fd632d7c1fb}{value\_}}(std::move(\mbox{\hyperlink{a00053_a6b58e451713ebbf12866c1cd8e0a66ab}{value}}))}
+\DoxyCodeLine{01639                 , \mbox{\hyperlink{a01042_adde04f86cc5d1e5ee2acdf401d1c0e54}{arg\_help\_}}(std::move(arg\_help))}
+\DoxyCodeLine{01640         \{}
+\DoxyCodeLine{01641         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a01042_adde04f86cc5d1e5ee2acdf401d1c0e54}\label{a01042_adde04f86cc5d1e5ee2acdf401d1c0e54}} 
+\index{cxxopts::Option@{cxxopts::Option}!arg\_help\_@{arg\_help\_}}
+\index{arg\_help\_@{arg\_help\_}!cxxopts::Option@{cxxopts::Option}}
+\doxysubsubsection{\texorpdfstring{arg\_help\_}{arg\_help\_}}
+{\footnotesize\ttfamily std\+::string cxxopts\+::\+Option\+::arg\+\_\+help\+\_\+}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01646}{1646}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+\mbox{\Hypertarget{a01042_af7e90af1a125c138802e576225ecb675}\label{a01042_af7e90af1a125c138802e576225ecb675}} 
+\index{cxxopts::Option@{cxxopts::Option}!desc\_@{desc\_}}
+\index{desc\_@{desc\_}!cxxopts::Option@{cxxopts::Option}}
+\doxysubsubsection{\texorpdfstring{desc\_}{desc\_}}
+{\footnotesize\ttfamily std\+::string cxxopts\+::\+Option\+::desc\+\_\+}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01644}{1644}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+\mbox{\Hypertarget{a01042_af5408ed9c7f5d322a8f4925aa337fa3e}\label{a01042_af5408ed9c7f5d322a8f4925aa337fa3e}} 
+\index{cxxopts::Option@{cxxopts::Option}!opts\_@{opts\_}}
+\index{opts\_@{opts\_}!cxxopts::Option@{cxxopts::Option}}
+\doxysubsubsection{\texorpdfstring{opts\_}{opts\_}}
+{\footnotesize\ttfamily std\+::string cxxopts\+::\+Option\+::opts\+\_\+}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01643}{1643}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+\mbox{\Hypertarget{a01042_a15377ffd237b0a9c5eb81fd632d7c1fb}\label{a01042_a15377ffd237b0a9c5eb81fd632d7c1fb}} 
+\index{cxxopts::Option@{cxxopts::Option}!value\_@{value\_}}
+\index{value\_@{value\_}!cxxopts::Option@{cxxopts::Option}}
+\doxysubsubsection{\texorpdfstring{value\_}{value\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$const \mbox{\hyperlink{a00914}{Value}}$>$ cxxopts\+::\+Option\+::value\+\_\+}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01645}{1645}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/utils/\mbox{\hyperlink{a00041}{cxxopts.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+digraph "cxxopts::OptionParser"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  rankdir="LR";
+  Node1 [label="cxxopts::OptionParser",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_options" ,fontname="Helvetica"];
+  Node2 [label="std::unordered_map\l\< K, T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" keys" ,fontname="Helvetica"];
+  Node3 [label="K",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node2 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" elements" ,fontname="Helvetica"];
+  Node4 [label="T",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_positional" ,fontname="Helvetica"];
+  Node5 [label="std::vector\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" elements" ,fontname="Helvetica"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_defaults\nm_sequential" ,fontname="Helvetica"];
+  Node6 [label="std::vector\< cxxopts\l::KeyValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" elements" ,fontname="Helvetica"];
+  Node7 [label="cxxopts::KeyValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01030.html",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_key\nm_value" ,fontname="Helvetica"];
+  Node8 [label="std::string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node9 [label="std::basic_string\<\l Char \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node6 [dir="back",color="orange",fontsize="12",style="dashed",label=" \< cxxopts::KeyValue \>" ,fontname="Helvetica"];
+  Node10 -> Node1 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_parsed" ,fontname="Helvetica"];
+  Node10 [label="std::unordered_map\l\< size_t, OptionValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" elements" ,fontname="Helvetica"];
+  Node11 [label="cxxopts::OptionValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01026.html",tooltip=" "];
+  Node8 -> Node11 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_long_name" ,fontname="Helvetica"];
+  Node12 -> Node11 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_value" ,fontname="Helvetica"];
+  Node12 [label="std::shared_ptr\< cxxopts\l::Value \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node12 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" ptr" ,fontname="Helvetica"];
+  Node13 [label="cxxopts::Value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00914.html",tooltip=" "];
+  Node14 -> Node13 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node14 [label="std::enable_shared\l_from_this\< Value \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node12 [dir="back",color="orange",fontsize="12",style="dashed",label=" \< cxxopts::Value \>" ,fontname="Helvetica"];
+  Node15 [label="std::shared_ptr\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node15 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" ptr" ,fontname="Helvetica"];
+  Node2 -> Node10 [dir="back",color="orange",fontsize="12",style="dashed",label=" \< size_t, OptionValue \>" ,fontname="Helvetica"];
+  Node16 -> Node1 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_keys" ,fontname="Helvetica"];
+  Node16 [label="std::unordered_map\l\< std::string, size_t \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node16 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" keys" ,fontname="Helvetica"];
+  Node2 -> Node16 [dir="back",color="orange",fontsize="12",style="dashed",label=" \< std::string, size_t \>" ,fontname="Helvetica"];
+}

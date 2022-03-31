@@ -1,0 +1,56 @@
+\hypertarget{a00011_source}{}\doxysection{Large\+Matcher.\+cpp}
+\label{a00011_source}\index{src/core/algo/LargeMatcher.cpp@{src/core/algo/LargeMatcher.cpp}}
+\mbox{\hyperlink{a00011}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00001}00001 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00002}00002 \textcolor{comment}{// Created by Alex Dremov on 31.03.2022.}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00003}00003 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{a00011_source_l00005}00005 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{a00005}{LargeMatcher.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{a00002}{core/StringMatcher.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{a00011_source_l00008}00008 \textcolor{keyword}{namespace }\mbox{\hyperlink{a00048}{StringMatch}} \{}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00009}\mbox{\hyperlink{a00869_a7d0656db118730a00cc8b69b8a1a3ece}{00009}}     \mbox{\hyperlink{a00869_a7d0656db118730a00cc8b69b8a1a3ece}{LargeMatcher::LargeMatcher}}(std::ifstream pfile, \textcolor{keywordtype}{bool} single, \textcolor{keywordtype}{size\_t} bufferSize)}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00010}00010             : file(std::move(pfile)), single(single), bufferSize(bufferSize) \{}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00011}00011         \mbox{\hyperlink{a00869_ae5c0f1ac4f206ce9de8ec2728cb901ba}{file}}.seekg(0, std::ios::beg);}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00012}00012         \mbox{\hyperlink{a00869_ae5c0f1ac4f206ce9de8ec2728cb901ba}{file}}.seekg(0, std::ios::end);}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00013}00013         \mbox{\hyperlink{a00869_a577e3485cdc420e2de518c745c45d8c7}{size}} = \mbox{\hyperlink{a00869_ae5c0f1ac4f206ce9de8ec2728cb901ba}{file}}.tellg();}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00014}00014     \}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{a00011_source_l00016}\mbox{\hyperlink{a00869_a23c48758e7997fa39fcc22cc72f9d444}{00016}}     std::vector<size\_t> \mbox{\hyperlink{a00869_a23c48758e7997fa39fcc22cc72f9d444}{LargeMatcher::getEntrances}}(\textcolor{keyword}{const} std::string \&pattern) \{}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00017}00017         std::vector<size\_t> entrances;}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{a00011_source_l00019}00019         \textcolor{keyword}{auto} bufferActualSize = std::max(\mbox{\hyperlink{a00869_ab96cd70e1ec93d878bda9f2d95286fc4}{bufferSize}}, pattern.size() * 2);}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00020}00020         std::string buffer(bufferActualSize + 1, \textcolor{charliteral}{'\(\backslash\)0'});}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{a00011_source_l00022}00022         \textcolor{keywordtype}{size\_t} globalPos = 0;}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00023}00023         \textcolor{keywordflow}{while} (globalPos + pattern.size() <= \mbox{\hyperlink{a00869_a577e3485cdc420e2de518c745c45d8c7}{size}}) \{}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00024}00024             \textcolor{keywordtype}{size\_t} pos = 0;}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00025}00025             \textcolor{keyword}{auto} stepSize = std::min(\mbox{\hyperlink{a00869_a577e3485cdc420e2de518c745c45d8c7}{size}} -\/ globalPos, bufferActualSize);}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{a00011_source_l00027}00027             \mbox{\hyperlink{a00869_ae5c0f1ac4f206ce9de8ec2728cb901ba}{file}}.seekg(globalPos);}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00028}00028             \mbox{\hyperlink{a00869_ae5c0f1ac4f206ce9de8ec2728cb901ba}{file}}.read(\&buffer[0], stepSize);}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00029}00029             buffer[stepSize] = 0;}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{a00011_source_l00031}00031             std::string\_view batch(\&buffer[pos]);}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{a00011_source_l00033}00033             \mbox{\hyperlink{a00897}{StringMatcher}} matcher(batch, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00034}00034             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} entry: matcher.\mbox{\hyperlink{a00897_a5954f674b0cfd1ddf5722a535075ce7f}{getEntrances}}(pattern)) \{}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00035}00035                 entrances.push\_back(entry + globalPos);}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00036}00036                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{a00869_acdcbb884d5fe8477fff35f9d2c43d737}{single}}) \{}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00037}00037                     \textcolor{keywordflow}{return} entrances;}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00038}00038                 \}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00039}00039             \}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00040}00040             globalPos += stepSize -\/ pattern.size() + 1;}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00041}00041         \}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{a00011_source_l00043}00043         \textcolor{keywordflow}{return} entrances;}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{a00011_source_l00046}\mbox{\hyperlink{a00869_ab38d1d1108017ca1710d49d55e55c9ce}{00046}}     \mbox{\hyperlink{a00869_ab38d1d1108017ca1710d49d55e55c9ce}{LargeMatcher::\string~LargeMatcher}}() \{}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00047}00047         \mbox{\hyperlink{a00869_ae5c0f1ac4f206ce9de8ec2728cb901ba}{file}}.close();}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00049}00049 \}}
+\DoxyCodeLine{\Hypertarget{a00011_source_l00050}00050 }
+
+\end{DoxyCode}

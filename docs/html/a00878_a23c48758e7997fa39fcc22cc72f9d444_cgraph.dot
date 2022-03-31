@@ -1,0 +1,21 @@
+digraph "StringMatch::LargeMatcher::getEntrances"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  rankdir="LR";
+  Node1 [label="StringMatch::LargeMatcher\l::getEntrances",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Complexity: O(|text|)"];
+  Node1 -> Node2 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node2 [label="StringMatch::StringMatcher\l::getEntrances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00906.html#a5954f674b0cfd1ddf5722a535075ce7f",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node3 [label="StringMatch::GeneralSearcher\l::getEntrances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00874.html#a374076af653dd977dad6adc61ee47d89",tooltip="Complexity: O(|text| + |pattern|)"];
+  Node3 -> Node4 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node4 [label="StringMatch::details\l::KMP::getEntrances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00890.html#a8fd130f29354d6f8d518817e683199f6",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node5 [label="StringMatch::details\l::KMP::computeLPSArray",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00890.html#ae229a3406e3e2afddf0efa0c2c712aff",tooltip=" "];
+  Node2 -> Node6 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node6 [label="StringMatch::SmallSearcher\l::getEntrances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00886.html#a14bb2e34d3313c1a6ba984055dd71f92",tooltip="Complexity: O(|text|)"];
+  Node2 -> Node7 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node7 [label="StringMatch::MatcherInterface\l::getEntrances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01058.html#a94fb8fd79594c34846a0755174df1e80",tooltip=" "];
+}

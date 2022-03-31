@@ -1,0 +1,27 @@
+digraph "StringMatch::details::STree::build_tree"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  rankdir="LR";
+  Node1 [label="StringMatch::details\l::STree::build_tree",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node2 [label="StringMatch::details\l::STree::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00894.html#a163d18dcc91683fb4a15c1c39d551bcb",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node3 [label="StringMatch::details\l::STree::tree_extend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00894.html#a24c85e65f714be5b07874a3d95fdf8a1",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node4 [label="StringMatch::details\l::STree::get_link",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00894.html#a67c1cd8ad107a5d7855c9f29016ff252",tooltip=" "];
+  Node4 -> Node4 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node4 -> Node5 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node5 [label="StringMatch::details\l::STree::go",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00894.html#a14ef5e18f124228cd901cac7a6b9e0f3",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node6 [label="StringMatch::details\l::STree::text",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00894.html#a9bfc0629c543674dc05589fc389e366c",tooltip=" "];
+  Node4 -> Node7 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node7 [label="StringMatch::details\l::STree::split",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00894.html#ac778513d57650439f0760887f1400033",tooltip=" "];
+  Node7 -> Node6 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node3 -> Node5 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node3 -> Node2 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node3 -> Node7 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node3 -> Node6 [color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,145 @@
+\hypertarget{a00873}{}\doxysection{String\+Match\+::Single\+Searcher Class Reference}
+\label{a00873}\index{StringMatch::SingleSearcher@{StringMatch::SingleSearcher}}
+
+
+Searches for first occurrence of pattern in string Utilizes Ukkonen\textquotesingle{}s compressed tree algorithm.  
+
+
+
+
+{\ttfamily \#include $<$Single\+Searcher.\+h$>$}
+
+
+
+Inheritance diagram for String\+Match\+::Single\+Searcher\+:
+% FIG 0
+
+
+Collaboration diagram for String\+Match\+::Single\+Searcher\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00873_ad3fbce41636c8fd4ec84f2bf755baefb}{Single\+Searcher}} (const std\+::string\+\_\+view \&text)
+\begin{DoxyCompactList}\small\item\em Complexity\+: O($\vert$text$\vert$) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{a00873_a0e14edb127751d46cc0ec5f62dd94289}{$\sim$\+Single\+Searcher}} () override=default
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{a00873_a7f8d5ec0414e019e7fe0b45ebdacd7fb}{get\+Entrances}} (const std\+::string \&pattern) override
+\begin{DoxyCompactList}\small\item\em Complexity\+: O($\vert$pattern$\vert$) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00885}{details\+::\+STree}} \mbox{\hyperlink{a00873_a6db37cec499d2938224848105df2ef93}{tree}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Searches for first occurrence of pattern in string Utilizes Ukkonen\textquotesingle{}s compressed tree algorithm. 
+
+Definition at line \mbox{\hyperlink{a00020_source_l00014}{14}} of file \mbox{\hyperlink{a00020_source}{Single\+Searcher.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00873_ad3fbce41636c8fd4ec84f2bf755baefb}\label{a00873_ad3fbce41636c8fd4ec84f2bf755baefb}} 
+\index{StringMatch::SingleSearcher@{StringMatch::SingleSearcher}!SingleSearcher@{SingleSearcher}}
+\index{SingleSearcher@{SingleSearcher}!StringMatch::SingleSearcher@{StringMatch::SingleSearcher}}
+\doxysubsubsection{\texorpdfstring{SingleSearcher()}{SingleSearcher()}}
+{\footnotesize\ttfamily String\+Match\+::\+Single\+Searcher\+::\+Single\+Searcher (\begin{DoxyParamCaption}\item[{const std\+::string\+\_\+view \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Complexity\+: O($\vert$text$\vert$) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & pattern to search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+indexes of all entries 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{a00014_source_l00008}{8}} of file \mbox{\hyperlink{a00014_source}{Single\+Searcher.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008                                                              :  \mbox{\hyperlink{a00873_a6db37cec499d2938224848105df2ef93}{tree}}(text) \{}
+\DoxyCodeLine{00009     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a00873_a0e14edb127751d46cc0ec5f62dd94289}\label{a00873_a0e14edb127751d46cc0ec5f62dd94289}} 
+\index{StringMatch::SingleSearcher@{StringMatch::SingleSearcher}!````~SingleSearcher@{$\sim$SingleSearcher}}
+\index{````~SingleSearcher@{$\sim$SingleSearcher}!StringMatch::SingleSearcher@{StringMatch::SingleSearcher}}
+\doxysubsubsection{\texorpdfstring{$\sim$SingleSearcher()}{~SingleSearcher()}}
+{\footnotesize\ttfamily String\+Match\+::\+Single\+Searcher\+::$\sim$\+Single\+Searcher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00873_a7f8d5ec0414e019e7fe0b45ebdacd7fb}\label{a00873_a7f8d5ec0414e019e7fe0b45ebdacd7fb}} 
+\index{StringMatch::SingleSearcher@{StringMatch::SingleSearcher}!getEntrances@{getEntrances}}
+\index{getEntrances@{getEntrances}!StringMatch::SingleSearcher@{StringMatch::SingleSearcher}}
+\doxysubsubsection{\texorpdfstring{getEntrances()}{getEntrances()}}
+{\footnotesize\ttfamily std\+::vector$<$ size\+\_\+t $>$ String\+Match\+::\+Single\+Searcher\+::get\+Entrances (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{pattern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Complexity\+: O($\vert$pattern$\vert$) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pattern} & pattern to search \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index of the first entry 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{a00901_a94fb8fd79594c34846a0755174df1e80}{String\+Match\+::\+Matcher\+Interface}}.
+
+
+
+Definition at line \mbox{\hyperlink{a00014_source_l00011}{11}} of file \mbox{\hyperlink{a00014_source}{Single\+Searcher.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011                                                                            \{}
+\DoxyCodeLine{00012         \textcolor{keyword}{auto} entry = \mbox{\hyperlink{a00873_a6db37cec499d2938224848105df2ef93}{tree}}.\mbox{\hyperlink{a00885_a7e7a62a9314218598864949074a35501}{find}}(pattern);}
+\DoxyCodeLine{00013         \textcolor{keywordflow}{if} (entry == -\/1)}
+\DoxyCodeLine{00014             \textcolor{keywordflow}{return} \{\};}
+\DoxyCodeLine{00015         \textcolor{keywordflow}{return} \{entry\};}
+\DoxyCodeLine{00016     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00038_source_l00118}{String\+Match\+::details\+::\+STree\+::find()}}, and \mbox{\hyperlink{a00020_source_l00033}{tree}}.
+
+Here is the call graph for this function\+:
+% FIG 2
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00873_a6db37cec499d2938224848105df2ef93}\label{a00873_a6db37cec499d2938224848105df2ef93}} 
+\index{StringMatch::SingleSearcher@{StringMatch::SingleSearcher}!tree@{tree}}
+\index{tree@{tree}!StringMatch::SingleSearcher@{StringMatch::SingleSearcher}}
+\doxysubsubsection{\texorpdfstring{tree}{tree}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00885}{details\+::\+STree}} String\+Match\+::\+Single\+Searcher\+::tree\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00020_source_l00033}{33}} of file \mbox{\hyperlink{a00020_source}{Single\+Searcher.\+h}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00014_source_l00011}{get\+Entrances()}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/core/algo/\mbox{\hyperlink{a00020}{Single\+Searcher.\+h}}\item 
+src/core/algo/\mbox{\hyperlink{a00014}{Single\+Searcher.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,309 @@
+\hypertarget{a01038}{}\doxysection{cxxopts\+::Parse\+Result\+::Iterator Class Reference}
+\label{a01038}\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+
+
+{\ttfamily \#include $<$cxxopts.\+hpp$>$}
+
+
+
+Collaboration diagram for cxxopts\+::Parse\+Result\+::Iterator\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{a01038_a4802fe1708a301c4be98b423f2823fe3}{difference\+\_\+type}} = void
+\item 
+using \mbox{\hyperlink{a01038_a028a7211e9afba85510fbeff708a877c}{iterator\+\_\+category}} = std\+::forward\+\_\+iterator\+\_\+tag
+\item 
+using \mbox{\hyperlink{a01038_adc569db0768e1ac98ca5fec44b2c8f55}{pointer}} = const \mbox{\hyperlink{a01030}{Key\+Value}} $\ast$
+\item 
+using \mbox{\hyperlink{a01038_a4d8cab1503154a28ff6adc5198114374}{reference}} = const \mbox{\hyperlink{a01030}{Key\+Value}} \&
+\item 
+using \mbox{\hyperlink{a01038_ad415f3d6f28ec474a22a90bda79dc668}{value\+\_\+type}} = \mbox{\hyperlink{a01030}{Key\+Value}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a01038_ab661290b7e3d0e3f9b9b2b986f26c3fd}{Iterator}} ()=default
+\item 
+\mbox{\hyperlink{a01038_a4271f7d62fcb221672696eb557a8774d}{Iterator}} (const \mbox{\hyperlink{a01038}{Iterator}} \&)=default
+\item 
+\mbox{\hyperlink{a01038_ac0c22d6b5b8fb9723309b772a9fa12cd}{Iterator}} (const \mbox{\hyperlink{a01034}{Parse\+Result}} $\ast$pr, bool \mbox{\hyperlink{a01034_a63ac972d67d59d5d6f2b6810ee1ad3c3}{end}}=false)
+\item 
+bool \mbox{\hyperlink{a01038_a3ecd2b61c580c4f6b74a0b194c93b4c1}{operator!=}} (const \mbox{\hyperlink{a01038}{Iterator}} \&other) const
+\item 
+const \mbox{\hyperlink{a01030}{Key\+Value}} \& \mbox{\hyperlink{a01038_aa2551df78e11cec0ce283b67e17d5757}{operator$\ast$}} ()
+\item 
+\mbox{\hyperlink{a01038}{Iterator}} \& \mbox{\hyperlink{a01038_a1b09a554a633442a754486bf0058dd65}{operator++}} ()
+\item 
+\mbox{\hyperlink{a01038}{Iterator}} \mbox{\hyperlink{a01038_af3ea912889d82299501e6d7c9d9d0332}{operator++}} (int)
+\item 
+const \mbox{\hyperlink{a01030}{Key\+Value}} $\ast$ \mbox{\hyperlink{a01038_abfd067d3f69b365c0394d1b6b34c6229}{operator-\/$>$}} ()
+\item 
+bool \mbox{\hyperlink{a01038_a4f87f2937a3eb08f6e4b03e415966201}{operator==}} (const \mbox{\hyperlink{a01038}{Iterator}} \&other) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{a01030}{Key\+Value}} $>$\+::const\+\_\+iterator \mbox{\hyperlink{a01038_ab4f1163aa5e31ef5a073170ce207f050}{m\+\_\+iter}}
+\item 
+const \mbox{\hyperlink{a01034}{Parse\+Result}} $\ast$ \mbox{\hyperlink{a01038_a0abfc80c0ca5c6d714df8a03e757516e}{m\+\_\+pr}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01458}{1458}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{a01038_a4802fe1708a301c4be98b423f2823fe3}\label{a01038_a4802fe1708a301c4be98b423f2823fe3}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!difference\_type@{difference\_type}}
+\index{difference\_type@{difference\_type}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{difference\_type}{difference\_type}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{a01038_a4802fe1708a301c4be98b423f2823fe3}{cxxopts\+::\+Parse\+Result\+::\+Iterator\+::difference\+\_\+type}} =  void}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01463}{1463}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+\mbox{\Hypertarget{a01038_a028a7211e9afba85510fbeff708a877c}\label{a01038_a028a7211e9afba85510fbeff708a877c}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!iterator\_category@{iterator\_category}}
+\index{iterator\_category@{iterator\_category}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{iterator\_category}{iterator\_category}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{a01038_a028a7211e9afba85510fbeff708a877c}{cxxopts\+::\+Parse\+Result\+::\+Iterator\+::iterator\+\_\+category}} =  std\+::forward\+\_\+iterator\+\_\+tag}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01461}{1461}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+\mbox{\Hypertarget{a01038_adc569db0768e1ac98ca5fec44b2c8f55}\label{a01038_adc569db0768e1ac98ca5fec44b2c8f55}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!pointer@{pointer}}
+\index{pointer@{pointer}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{pointer}{pointer}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{a01038_adc569db0768e1ac98ca5fec44b2c8f55}{cxxopts\+::\+Parse\+Result\+::\+Iterator\+::pointer}} =  const \mbox{\hyperlink{a01030}{Key\+Value}}$\ast$}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01464}{1464}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+\mbox{\Hypertarget{a01038_a4d8cab1503154a28ff6adc5198114374}\label{a01038_a4d8cab1503154a28ff6adc5198114374}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!reference@{reference}}
+\index{reference@{reference}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{reference}{reference}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{a01038_a4d8cab1503154a28ff6adc5198114374}{cxxopts\+::\+Parse\+Result\+::\+Iterator\+::reference}} =  const \mbox{\hyperlink{a01030}{Key\+Value}}\&}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01465}{1465}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+\mbox{\Hypertarget{a01038_ad415f3d6f28ec474a22a90bda79dc668}\label{a01038_ad415f3d6f28ec474a22a90bda79dc668}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!value\_type@{value\_type}}
+\index{value\_type@{value\_type}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{value\_type}{value\_type}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{a01038_ad415f3d6f28ec474a22a90bda79dc668}{cxxopts\+::\+Parse\+Result\+::\+Iterator\+::value\+\_\+type}} =  \mbox{\hyperlink{a01030}{Key\+Value}}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01462}{1462}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a01038_ab661290b7e3d0e3f9b9b2b986f26c3fd}\label{a01038_ab661290b7e3d0e3f9b9b2b986f26c3fd}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{Iterator()}{Iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily cxxopts\+::\+Parse\+Result\+::\+Iterator\+::\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{a01038_a4271f7d62fcb221672696eb557a8774d}\label{a01038_a4271f7d62fcb221672696eb557a8774d}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{Iterator()}{Iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily cxxopts\+::\+Parse\+Result\+::\+Iterator\+::\+Iterator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a01038}{Iterator}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{a01038_ac0c22d6b5b8fb9723309b772a9fa12cd}\label{a01038_ac0c22d6b5b8fb9723309b772a9fa12cd}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{Iterator()}{Iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily cxxopts\+::\+Parse\+Result\+::\+Iterator\+::\+Iterator (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a01034}{Parse\+Result}} $\ast$}]{pr,  }\item[{bool}]{end = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01470}{1470}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01471                     : \mbox{\hyperlink{a01038_a0abfc80c0ca5c6d714df8a03e757516e}{m\_pr}}(pr)}
+\DoxyCodeLine{01472                     , \mbox{\hyperlink{a01038_ab4f1163aa5e31ef5a073170ce207f050}{m\_iter}}(\mbox{\hyperlink{a01034_a63ac972d67d59d5d6f2b6810ee1ad3c3}{end}}? pr-\/>m\_defaults.end(): pr-\/>m\_sequential.begin())}
+\DoxyCodeLine{01473             \{}
+\DoxyCodeLine{01474             \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a01038_a3ecd2b61c580c4f6b74a0b194c93b4c1}\label{a01038_a3ecd2b61c580c4f6b74a0b194c93b4c1}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool cxxopts\+::\+Parse\+Result\+::\+Iterator\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a01038}{Iterator}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01499}{1499}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01500             \{}
+\DoxyCodeLine{01501                 \textcolor{keywordflow}{return} !(*\textcolor{keyword}{this} == other);}
+\DoxyCodeLine{01502             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a01038_aa2551df78e11cec0ce283b67e17d5757}\label{a01038_aa2551df78e11cec0ce283b67e17d5757}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{a01030}{Key\+Value}} \& cxxopts\+::\+Parse\+Result\+::\+Iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01504}{1504}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01505             \{}
+\DoxyCodeLine{01506                 \textcolor{keywordflow}{return} *\mbox{\hyperlink{a01038_ab4f1163aa5e31ef5a073170ce207f050}{m\_iter}};}
+\DoxyCodeLine{01507             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01516}{m\+\_\+iter}}.
+
+\mbox{\Hypertarget{a01038_a1b09a554a633442a754486bf0058dd65}\label{a01038_a1b09a554a633442a754486bf0058dd65}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a01038}{Iterator}} \& cxxopts\+::\+Parse\+Result\+::\+Iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01476}{1476}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01477             \{}
+\DoxyCodeLine{01478                 ++\mbox{\hyperlink{a01038_ab4f1163aa5e31ef5a073170ce207f050}{m\_iter}};}
+\DoxyCodeLine{01479                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{a01038_ab4f1163aa5e31ef5a073170ce207f050}{m\_iter}} == \mbox{\hyperlink{a01038_a0abfc80c0ca5c6d714df8a03e757516e}{m\_pr}}-\/>\mbox{\hyperlink{a01034_ab9d7bcfd12003cd06bddd374b364a0ec}{m\_sequential}}.end())}
+\DoxyCodeLine{01480                 \{}
+\DoxyCodeLine{01481                     \mbox{\hyperlink{a01038_ab4f1163aa5e31ef5a073170ce207f050}{m\_iter}} = \mbox{\hyperlink{a01038_a0abfc80c0ca5c6d714df8a03e757516e}{m\_pr}}-\/>\mbox{\hyperlink{a01034_af2d75fd14457385e5127114007f64e20}{m\_defaults}}.begin();}
+\DoxyCodeLine{01482                     \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{01483                 \}}
+\DoxyCodeLine{01484                 \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{01485             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01623}{cxxopts\+::\+Parse\+Result\+::m\+\_\+defaults}}, \mbox{\hyperlink{a00041_source_l01516}{m\+\_\+iter}}, \mbox{\hyperlink{a00041_source_l01515}{m\+\_\+pr}}, and \mbox{\hyperlink{a00041_source_l01622}{cxxopts\+::\+Parse\+Result\+::m\+\_\+sequential}}.
+
+\mbox{\Hypertarget{a01038_af3ea912889d82299501e6d7c9d9d0332}\label{a01038_af3ea912889d82299501e6d7c9d9d0332}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a01038}{Iterator}} cxxopts\+::\+Parse\+Result\+::\+Iterator\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01487}{1487}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01488             \{}
+\DoxyCodeLine{01489                 \mbox{\hyperlink{a01038_ab661290b7e3d0e3f9b9b2b986f26c3fd}{Iterator}} retval = *\textcolor{keyword}{this};}
+\DoxyCodeLine{01490                 ++(*this);}
+\DoxyCodeLine{01491                 \textcolor{keywordflow}{return} retval;}
+\DoxyCodeLine{01492             \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{a01038_abfd067d3f69b365c0394d1b6b34c6229}\label{a01038_abfd067d3f69b365c0394d1b6b34c6229}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator-\/$>$()}{operator->()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{a01030}{Key\+Value}} $\ast$ cxxopts\+::\+Parse\+Result\+::\+Iterator\+::operator-\/$>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01509}{1509}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01510             \{}
+\DoxyCodeLine{01511                 \textcolor{keywordflow}{return} \mbox{\hyperlink{a01038_ab4f1163aa5e31ef5a073170ce207f050}{m\_iter}}.operator-\/>();}
+\DoxyCodeLine{01512             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01516}{m\+\_\+iter}}.
+
+\mbox{\Hypertarget{a01038_a4f87f2937a3eb08f6e4b03e415966201}\label{a01038_a4f87f2937a3eb08f6e4b03e415966201}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool cxxopts\+::\+Parse\+Result\+::\+Iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{a01038}{Iterator}} \&}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01494}{1494}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01495             \{}
+\DoxyCodeLine{01496                 \textcolor{keywordflow}{return} \mbox{\hyperlink{a01038_ab4f1163aa5e31ef5a073170ce207f050}{m\_iter}} == other.m\_iter;}
+\DoxyCodeLine{01497             \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l01516}{m\+\_\+iter}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a01038_ab4f1163aa5e31ef5a073170ce207f050}\label{a01038_ab4f1163aa5e31ef5a073170ce207f050}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!m\_iter@{m\_iter}}
+\index{m\_iter@{m\_iter}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{m\_iter}{m\_iter}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{a01030}{Key\+Value}}$>$\+::const\+\_\+iterator cxxopts\+::\+Parse\+Result\+::\+Iterator\+::m\+\_\+iter\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01516}{1516}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l01504}{operator$\ast$()}}, \mbox{\hyperlink{a00041_source_l01476}{operator++()}}, \mbox{\hyperlink{a00041_source_l01509}{operator-\/$>$()}}, and \mbox{\hyperlink{a00041_source_l01494}{operator==()}}.
+
+\mbox{\Hypertarget{a01038_a0abfc80c0ca5c6d714df8a03e757516e}\label{a01038_a0abfc80c0ca5c6d714df8a03e757516e}} 
+\index{cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}!m\_pr@{m\_pr}}
+\index{m\_pr@{m\_pr}!cxxopts::ParseResult::Iterator@{cxxopts::ParseResult::Iterator}}
+\doxysubsubsection{\texorpdfstring{m\_pr}{m\_pr}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{a01034}{Parse\+Result}}$\ast$ cxxopts\+::\+Parse\+Result\+::\+Iterator\+::m\+\_\+pr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01515}{1515}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l01476}{operator++()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/utils/\mbox{\hyperlink{a00041}{cxxopts.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{a00918}{}\doxysection{cxxopts\+::Option\+Exception Class Reference}
+\label{a00918}\index{cxxopts::OptionException@{cxxopts::OptionException}}
+
+
+{\ttfamily \#include $<$cxxopts.\+hpp$>$}
+
+
+
+Inheritance diagram for cxxopts\+::Option\+Exception\+:
+% FIG 0
+
+
+Collaboration diagram for cxxopts\+::Option\+Exception\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a00918_adeba699012dd6041a966f3d7a53b9c47}{Option\+Exception}} (std\+::string message)
+\item 
+\mbox{\hyperlink{a00041_a6d9ad4f693e16a4c6cdce8373f403e5d}{CXXOPTS\+\_\+\+NODISCARD}} const char $\ast$ \mbox{\hyperlink{a00918_a9b53b66ca94838f8d1d696fad2576f3e}{what}} () const noexcept override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{a00918_aff1460a5b83bee97c0343c9b85c4c81c}{m\+\_\+message}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l00370}{370}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a00918_adeba699012dd6041a966f3d7a53b9c47}\label{a00918_adeba699012dd6041a966f3d7a53b9c47}} 
+\index{cxxopts::OptionException@{cxxopts::OptionException}!OptionException@{OptionException}}
+\index{OptionException@{OptionException}!cxxopts::OptionException@{cxxopts::OptionException}}
+\doxysubsubsection{\texorpdfstring{OptionException()}{OptionException()}}
+{\footnotesize\ttfamily cxxopts\+::\+Option\+Exception\+::\+Option\+Exception (\begin{DoxyParamCaption}\item[{std\+::string}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l00373}{373}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00374                 : \mbox{\hyperlink{a00918_aff1460a5b83bee97c0343c9b85c4c81c}{m\_message}}(std::move(message))}
+\DoxyCodeLine{00375         \{}
+\DoxyCodeLine{00376         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a00918_a9b53b66ca94838f8d1d696fad2576f3e}\label{a00918_a9b53b66ca94838f8d1d696fad2576f3e}} 
+\index{cxxopts::OptionException@{cxxopts::OptionException}!what@{what}}
+\index{what@{what}!cxxopts::OptionException@{cxxopts::OptionException}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a00041_a6d9ad4f693e16a4c6cdce8373f403e5d}{CXXOPTS\+\_\+\+NODISCARD}} const char $\ast$ cxxopts\+::\+Option\+Exception\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l00380}{380}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00381         \{}
+\DoxyCodeLine{00382             \textcolor{keywordflow}{return} \mbox{\hyperlink{a00918_aff1460a5b83bee97c0343c9b85c4c81c}{m\_message}}.c\_str();}
+\DoxyCodeLine{00383         \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l00386}{m\+\_\+message}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a00918_aff1460a5b83bee97c0343c9b85c4c81c}\label{a00918_aff1460a5b83bee97c0343c9b85c4c81c}} 
+\index{cxxopts::OptionException@{cxxopts::OptionException}!m\_message@{m\_message}}
+\index{m\_message@{m\_message}!cxxopts::OptionException@{cxxopts::OptionException}}
+\doxysubsubsection{\texorpdfstring{m\_message}{m\_message}}
+{\footnotesize\ttfamily std\+::string cxxopts\+::\+Option\+Exception\+::m\+\_\+message\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l00386}{386}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+Referenced by \mbox{\hyperlink{a00041_source_l00380}{what()}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/utils/\mbox{\hyperlink{a00041}{cxxopts.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+\hypertarget{a00020_source}{}\doxysection{Single\+Searcher.\+h}
+\label{a00020_source}\index{src/core/algo/SingleSearcher.h@{src/core/algo/SingleSearcher.h}}
+\mbox{\hyperlink{a00020}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00001}00001 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00002}00002 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00003}00003 \textcolor{comment}{// Created by Alex Dremov on 31.03.2022.}}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00004}00004 \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{a00020_source_l00006}00006 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{a00044}{interfaces/MatcherInterface.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00007}00007 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{a00029}{core/details/Ukkonen.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{a00020_source_l00009}00009 \textcolor{keyword}{namespace }\mbox{\hyperlink{a00048}{StringMatch}} \{}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00014}\mbox{\hyperlink{a00873}{00014}}     \textcolor{keyword}{class }\mbox{\hyperlink{a00873}{SingleSearcher}} : \textcolor{keyword}{public} \mbox{\hyperlink{a00901}{MatcherInterface}} \{}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00015}00015     \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00021}00021         \textcolor{keyword}{explicit} \mbox{\hyperlink{a00873_ad3fbce41636c8fd4ec84f2bf755baefb}{SingleSearcher}}(\textcolor{keyword}{const} std::string\_view \&text);}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{a00020_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{a00020_source_l00029}00029         std::vector<size\_t> \mbox{\hyperlink{a00873_a7f8d5ec0414e019e7fe0b45ebdacd7fb}{getEntrances}}(\textcolor{keyword}{const} std::string \&pattern) \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{a00020_source_l00031}\mbox{\hyperlink{a00873_a0e14edb127751d46cc0ec5f62dd94289}{00031}}         \mbox{\hyperlink{a00873_a0e14edb127751d46cc0ec5f62dd94289}{\string~SingleSearcher}}() \textcolor{keyword}{override} = \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00032}00032     \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00033}\mbox{\hyperlink{a00873_a6db37cec499d2938224848105df2ef93}{00033}}         \mbox{\hyperlink{a00885}{details::STree}} \mbox{\hyperlink{a00873_a6db37cec499d2938224848105df2ef93}{tree}};}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00034}00034     \};}
+\DoxyCodeLine{\Hypertarget{a00020_source_l00035}00035 \}}
+
+\end{DoxyCode}

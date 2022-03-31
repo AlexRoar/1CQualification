@@ -1,0 +1,48 @@
+digraph "cxxopts::ParseResult"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  rankdir="LR";
+  Node1 [label="cxxopts::ParseResult",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_keys" ];
+  Node2 [label="std::unordered_map\l\< std::string, size_t \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" keys" ];
+  Node3 [label="std::string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node4 [label="std::basic_string\<\l Char \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="orange",fontsize="12",style="dashed",label=" \< std::string, size_t \>" ];
+  Node5 [label="std::unordered_map\l\< K, T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" keys" ];
+  Node6 [label="K",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node5 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" elements" ];
+  Node7 [label="T",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node8 -> Node1 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_values" ];
+  Node8 [label="std::unordered_map\l\< size_t, OptionValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node9 -> Node8 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" elements" ];
+  Node9 [label="cxxopts::OptionValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01026.html",tooltip=" "];
+  Node3 -> Node9 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_long_name" ];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_value" ];
+  Node10 [label="std::shared_ptr\< cxxopts\l::Value \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" ptr" ];
+  Node11 [label="cxxopts::Value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00914.html",tooltip=" "];
+  Node12 -> Node11 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node12 [label="std::enable_shared\l_from_this\< Value \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node13 -> Node10 [dir="back",color="orange",fontsize="12",style="dashed",label=" \< cxxopts::Value \>" ];
+  Node13 [label="std::shared_ptr\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node13 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" ptr" ];
+  Node5 -> Node8 [dir="back",color="orange",fontsize="12",style="dashed",label=" \< size_t, OptionValue \>" ];
+  Node14 -> Node1 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_defaults\nm_sequential" ];
+  Node14 [label="std::vector\< cxxopts\l::KeyValue \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node15 -> Node14 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" elements" ];
+  Node15 [label="cxxopts::KeyValue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01030.html",tooltip=" "];
+  Node3 -> Node15 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_key\nm_value" ];
+  Node16 -> Node14 [dir="back",color="orange",fontsize="12",style="dashed",label=" \< cxxopts::KeyValue \>" ];
+  Node16 [label="std::vector\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node16 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" elements" ];
+  Node17 -> Node1 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" m_unmatched" ];
+  Node17 [label="std::vector\< std::string \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node17 [dir="back",color="darkorchid3",fontsize="12",style="dashed",label=" elements" ];
+  Node16 -> Node17 [dir="back",color="orange",fontsize="12",style="dashed",label=" \< std::string \>" ];
+}

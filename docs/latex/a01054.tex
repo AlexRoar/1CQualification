@@ -1,0 +1,140 @@
+\hypertarget{a01054}{}\doxysection{cxxopts\+::Option\+Adder Class Reference}
+\label{a01054}\index{cxxopts::OptionAdder@{cxxopts::OptionAdder}}
+
+
+{\ttfamily \#include $<$cxxopts.\+hpp$>$}
+
+
+
+Collaboration diagram for cxxopts\+::Option\+Adder\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{a01054_ac9da55d72245e55eed70486200a60728}{Option\+Adder}} (\mbox{\hyperlink{a01050}{Options}} \&options, std\+::string group)
+\item 
+\mbox{\hyperlink{a01054}{Option\+Adder}} \& \mbox{\hyperlink{a01054_a4feb747760c5fbaa807a4c8e1c335ac5}{operator()}} (const std\+::string \&opts, const std\+::string \&desc, const std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{a00914}{Value}} $>$ \&\mbox{\hyperlink{a00053_a6b58e451713ebbf12866c1cd8e0a66ab}{value}}=\+::cxxopts\+::value$<$ bool $>$(), std\+::string arg\+\_\+help=\char`\"{}\char`\"{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{a01054_ab159178d063eaa4836fe828036dc25a8}{m\+\_\+group}}
+\item 
+\mbox{\hyperlink{a01050}{Options}} \& \mbox{\hyperlink{a01054_a84a1bb47fc5417299ceefbbdaf84c6cb}{m\+\_\+options}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01870}{1870}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{a01054_ac9da55d72245e55eed70486200a60728}\label{a01054_ac9da55d72245e55eed70486200a60728}} 
+\index{cxxopts::OptionAdder@{cxxopts::OptionAdder}!OptionAdder@{OptionAdder}}
+\index{OptionAdder@{OptionAdder}!cxxopts::OptionAdder@{cxxopts::OptionAdder}}
+\doxysubsubsection{\texorpdfstring{OptionAdder()}{OptionAdder()}}
+{\footnotesize\ttfamily cxxopts\+::\+Option\+Adder\+::\+Option\+Adder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{a01050}{Options}} \&}]{options,  }\item[{std\+::string}]{group }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01874}{1874}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{01875                 : \mbox{\hyperlink{a01054_a84a1bb47fc5417299ceefbbdaf84c6cb}{m\_options}}(options), \mbox{\hyperlink{a01054_ab159178d063eaa4836fe828036dc25a8}{m\_group}}(std::move(group))}
+\DoxyCodeLine{01876         \{}
+\DoxyCodeLine{01877         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{a01054_a4feb747760c5fbaa807a4c8e1c335ac5}\label{a01054_a4feb747760c5fbaa807a4c8e1c335ac5}} 
+\index{cxxopts::OptionAdder@{cxxopts::OptionAdder}!operator()@{operator()}}
+\index{operator()@{operator()}!cxxopts::OptionAdder@{cxxopts::OptionAdder}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a01054}{Option\+Adder}} \& cxxopts\+::\+Option\+Adder\+::operator() (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{opts,  }\item[{const std\+::string \&}]{desc,  }\item[{const std\+::shared\+\_\+ptr$<$ const \mbox{\hyperlink{a00914}{Value}} $>$ \&}]{value = {\ttfamily \+:\+:cxxopts\+:\+:value$<$bool$>$()},  }\item[{std\+::string}]{arg\+\_\+help = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l02100}{2100}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{02107     \{}
+\DoxyCodeLine{02108         std::string short\_sw, long\_sw;}
+\DoxyCodeLine{02109         std::tie(short\_sw, long\_sw) = \mbox{\hyperlink{a00056_a87d93ecf1931bfdf64feb40a008fa909}{values::parser\_tool::SplitSwitchDef}}(opts);}
+\DoxyCodeLine{02110 }
+\DoxyCodeLine{02111         \textcolor{keywordflow}{if} (!short\_sw.length() \&\& !long\_sw.length())}
+\DoxyCodeLine{02112         \{}
+\DoxyCodeLine{02113             throw\_or\_mimic<invalid\_option\_format\_error>(opts);}
+\DoxyCodeLine{02114         \}}
+\DoxyCodeLine{02115         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (long\_sw.length() == 1 \&\& short\_sw.length())}
+\DoxyCodeLine{02116         \{}
+\DoxyCodeLine{02117             throw\_or\_mimic<invalid\_option\_format\_error>(opts);}
+\DoxyCodeLine{02118         \}}
+\DoxyCodeLine{02119 }
+\DoxyCodeLine{02120         \textcolor{keyword}{auto} option\_names = []}
+\DoxyCodeLine{02121                 (}
+\DoxyCodeLine{02122                         \textcolor{keyword}{const} std::string \&short\_,}
+\DoxyCodeLine{02123                         \textcolor{keyword}{const} std::string \&long\_}
+\DoxyCodeLine{02124                 )}
+\DoxyCodeLine{02125         \{}
+\DoxyCodeLine{02126             \textcolor{keywordflow}{if} (long\_.length() == 1)}
+\DoxyCodeLine{02127             \{}
+\DoxyCodeLine{02128                 \textcolor{keywordflow}{return} std::make\_tuple(long\_, short\_);}
+\DoxyCodeLine{02129             \}}
+\DoxyCodeLine{02130             \textcolor{keywordflow}{return} std::make\_tuple(short\_, long\_);}
+\DoxyCodeLine{02131         \}(short\_sw, long\_sw);}
+\DoxyCodeLine{02132 }
+\DoxyCodeLine{02133         \mbox{\hyperlink{a01054_a84a1bb47fc5417299ceefbbdaf84c6cb}{m\_options}}.\mbox{\hyperlink{a01050_ac698adfe5b5ca50d36017a52b27fb828}{add\_option}}}
+\DoxyCodeLine{02134                 (}
+\DoxyCodeLine{02135                         \mbox{\hyperlink{a01054_ab159178d063eaa4836fe828036dc25a8}{m\_group}},}
+\DoxyCodeLine{02136                         std::get<0>(option\_names),}
+\DoxyCodeLine{02137                         std::get<1>(option\_names),}
+\DoxyCodeLine{02138                         desc,}
+\DoxyCodeLine{02139                         \mbox{\hyperlink{a00053_a6b58e451713ebbf12866c1cd8e0a66ab}{value}},}
+\DoxyCodeLine{02140                         std::move(arg\_help)}
+\DoxyCodeLine{02141                 );}
+\DoxyCodeLine{02142 }
+\DoxyCodeLine{02143         \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{02144     \}}
+
+\end{DoxyCode}
+
+
+References \mbox{\hyperlink{a00041_source_l00762}{cxxopts\+::values\+::parser\+\_\+tool\+::\+Split\+Switch\+Def()}}, and \mbox{\hyperlink{a00041_source_l01212}{cxxopts\+::value()}}.
+
+Here is the call graph for this function\+:
+% FIG 1
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{a01054_ab159178d063eaa4836fe828036dc25a8}\label{a01054_ab159178d063eaa4836fe828036dc25a8}} 
+\index{cxxopts::OptionAdder@{cxxopts::OptionAdder}!m\_group@{m\_group}}
+\index{m\_group@{m\_group}!cxxopts::OptionAdder@{cxxopts::OptionAdder}}
+\doxysubsubsection{\texorpdfstring{m\_group}{m\_group}}
+{\footnotesize\ttfamily std\+::string cxxopts\+::\+Option\+Adder\+::m\+\_\+group\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01891}{1891}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+\mbox{\Hypertarget{a01054_a84a1bb47fc5417299ceefbbdaf84c6cb}\label{a01054_a84a1bb47fc5417299ceefbbdaf84c6cb}} 
+\index{cxxopts::OptionAdder@{cxxopts::OptionAdder}!m\_options@{m\_options}}
+\index{m\_options@{m\_options}!cxxopts::OptionAdder@{cxxopts::OptionAdder}}
+\doxysubsubsection{\texorpdfstring{m\_options}{m\_options}}
+{\footnotesize\ttfamily \mbox{\hyperlink{a01050}{Options}}\& cxxopts\+::\+Option\+Adder\+::m\+\_\+options\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{a00041_source_l01890}{1890}} of file \mbox{\hyperlink{a00041_source}{cxxopts.\+hpp}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/core/utils/\mbox{\hyperlink{a00041}{cxxopts.\+hpp}}\end{DoxyCompactItemize}

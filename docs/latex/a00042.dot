@@ -1,0 +1,39 @@
+digraph "src/core/StringMatcher.cpp"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  Node1 [label="src/core/StringMatcher.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="12",style="solid"];
+  Node2 [label="StringMatcher.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00002.html",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="12",style="solid"];
+  Node3 [label="interfaces/MatcherInterface.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00044.html",tooltip=" "];
+  Node3 -> Node4 [color="midnightblue",fontsize="12",style="solid"];
+  Node4 [label="vector",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node3 -> Node5 [color="midnightblue",fontsize="12",style="solid"];
+  Node5 [label="string",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node1 -> Node6 [color="midnightblue",fontsize="12",style="solid"];
+  Node6 [label="core/algo/GeneralSearcher.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00017.html",tooltip=" "];
+  Node6 -> Node5 [color="midnightblue",fontsize="12",style="solid"];
+  Node6 -> Node4 [color="midnightblue",fontsize="12",style="solid"];
+  Node6 -> Node3 [color="midnightblue",fontsize="12",style="solid"];
+  Node1 -> Node7 [color="midnightblue",fontsize="12",style="solid"];
+  Node7 [label="core/algo/SmallSearcher.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00023.html",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="12",style="solid"];
+  Node8 [label="string_view",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node7 -> Node3 [color="midnightblue",fontsize="12",style="solid"];
+  Node1 -> Node9 [color="midnightblue",fontsize="12",style="solid"];
+  Node9 [label="core/algo/SingleSearcher.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00020.html",tooltip=" "];
+  Node9 -> Node3 [color="midnightblue",fontsize="12",style="solid"];
+  Node9 -> Node10 [color="midnightblue",fontsize="12",style="solid"];
+  Node10 [label="core/details/Ukkonen.h",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00029.html",tooltip=" "];
+  Node10 -> Node11 [color="midnightblue",fontsize="12",style="solid"];
+  Node11 [label="iostream",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node12 [color="midnightblue",fontsize="12",style="solid"];
+  Node12 [label="map",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node10 -> Node4 [color="midnightblue",fontsize="12",style="solid"];
+  Node10 -> Node5 [color="midnightblue",fontsize="12",style="solid"];
+  Node10 -> Node13 [color="midnightblue",fontsize="12",style="solid"];
+  Node13 [label="algorithm",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+}

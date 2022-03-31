@@ -1,0 +1,17 @@
+digraph "cxxopts::values::standard_value&lt; bool &gt;"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  Node1 [label="cxxopts::values::standard\l_value\< bool \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node2 [label="cxxopts::values::abstract\l_value\< bool \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01002.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node3 [label="cxxopts::Value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00914.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node4 [label="std::enable_shared\l_from_this\< Value \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",tooltip=" "];
+  Node5 -> Node2 [dir="back",color="orange",fontsize="12",style="dashed",label=" \< bool \>" ];
+  Node5 [label="cxxopts::values::abstract\l_value\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01002.html",tooltip=" "];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+}

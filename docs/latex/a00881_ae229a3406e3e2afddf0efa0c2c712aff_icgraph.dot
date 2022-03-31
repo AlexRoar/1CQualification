@@ -1,0 +1,17 @@
+digraph "StringMatch::details::KMP::computeLPSArray"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  rankdir="RL";
+  Node1 [label="StringMatch::details\l::KMP::computeLPSArray",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node2 [label="StringMatch::details\l::KMP::getEntrances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00881.html#a8fd130f29354d6f8d518817e683199f6",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node3 [label="StringMatch::GeneralSearcher\l::getEntrances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00865.html#a374076af653dd977dad6adc61ee47d89",tooltip="Complexity: O(|text| + |pattern|)"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node4 [label="StringMatch::StringMatcher\l::getEntrances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00897.html#a5954f674b0cfd1ddf5722a535075ce7f",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="12",style="solid"];
+  Node5 [label="StringMatch::LargeMatcher\l::getEntrances",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00869.html#a23c48758e7997fa39fcc22cc72f9d444",tooltip="Complexity: O(|text|)"];
+}
