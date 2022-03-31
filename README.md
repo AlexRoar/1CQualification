@@ -54,3 +54,6 @@ cmake ..
 make
 ctest
 ```
+
+## Doxygen документация
+<a href="https://alexroar.github.io/1CQualification/annotated.html">link</a>
