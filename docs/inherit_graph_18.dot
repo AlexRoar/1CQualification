@@ -1,0 +1,19 @@
+digraph "Graphical Class Hierarchy"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  rankdir="LR";
+  Node0 [label="std::enable_shared\l_from_this",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node1 [label="cxxopts::Value",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00914.html",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node2 [label="cxxopts::values::abstract\l_value\< bool \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01002.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node3 [label="cxxopts::values::standard\l_value\< bool \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01010.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node4 [label="cxxopts::values::abstract\l_value\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01002.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node5 [label="cxxopts::values::standard\l_value\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a01006.html",tooltip=" "];
+}

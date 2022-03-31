@@ -3,6 +3,9 @@
 //
 
 #include "SmallSearcher.h"
+#include <exception>
+#include <cstring>
+#include <stdexcept>
 
 namespace StringMatch {
     SmallSearcher::SmallSearcher(const std::string_view &text) :

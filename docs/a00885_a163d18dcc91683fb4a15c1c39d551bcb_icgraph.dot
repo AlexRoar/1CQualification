@@ -1,0 +1,22 @@
+digraph "StringMatch::details::STree::size"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="12",labelfontname="Helvetica",labelfontsize="12"];
+  node [fontname="Helvetica",fontsize="12",shape=record];
+  rankdir="RL";
+  Node1 [label="StringMatch::details\l::STree::size",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node2 [label="StringMatch::details\l::STree::build_tree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00885.html#a4ada1b74912366f01c9f298e426dc25c",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node3 [label="StringMatch::details\l::STree::STree",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00885.html#ae6a9517acbc3452388fded61039bed84",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node4 [label="StringMatch::details\l::STree::setSuffixIndexByDFS",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00885.html#aea12bfe14baa0169ebf89773960e1fbd",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node5 [label="StringMatch::details\l::STree::finalize",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00885.html#a514f18f7445f5749eb5d861fae83f640",tooltip=" "];
+  Node5 -> Node3 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node4 -> Node4 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+  Node6 [label="StringMatch::details\l::STree::tree_extend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$a00885.html#a24c85e65f714be5b07874a3d95fdf8a1",tooltip=" "];
+  Node6 -> Node2 [dir="back",color="midnightblue",fontsize="12",style="solid",fontname="Helvetica"];
+}
