@@ -195,20 +195,8 @@ Definition at line \mbox{\hyperlink{a00038_source_l00118}{118}} of file \mbox{\h
 \DoxyCodeLine{00139 }
 \DoxyCodeLine{00140         \textcolor{keywordflow}{if} (st.v == -\/1)}
 \DoxyCodeLine{00141             \textcolor{keywordflow}{return} -\/1;}
-\DoxyCodeLine{00142 }
-\DoxyCodeLine{00143         \textcolor{keywordflow}{while} (!\mbox{\hyperlink{a00885_a0b33e09e362f7f99617ec9815808e539}{nodes}}[st.v].next.empty()) \{}
-\DoxyCodeLine{00144             \textcolor{keywordtype}{size\_t} v = \mbox{\hyperlink{a00885_a0b33e09e362f7f99617ec9815808e539}{nodes}}[st.v].next.begin()-\/>second;}
-\DoxyCodeLine{00145             \textcolor{keywordtype}{size\_t} minPos = \mbox{\hyperlink{a00885_a0b33e09e362f7f99617ec9815808e539}{nodes}}[v].suffixIndex;}
-\DoxyCodeLine{00146             \textcolor{keywordflow}{for} (\textcolor{keyword}{const} \textcolor{keyword}{auto} \&i: \mbox{\hyperlink{a00885_a0b33e09e362f7f99617ec9815808e539}{nodes}}[st.v].next) \{}
-\DoxyCodeLine{00147                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{a00885_a0b33e09e362f7f99617ec9815808e539}{nodes}}[i.second].suffixIndex < minPos) \{}
-\DoxyCodeLine{00148                     minPos = \mbox{\hyperlink{a00885_a0b33e09e362f7f99617ec9815808e539}{nodes}}[i.second].suffixIndex;}
-\DoxyCodeLine{00149                     v = i.second;}
-\DoxyCodeLine{00150                 \}}
-\DoxyCodeLine{00151             \}}
-\DoxyCodeLine{00152             st.v = v;}
-\DoxyCodeLine{00153         \}}
-\DoxyCodeLine{00154         \textcolor{keywordflow}{return} \mbox{\hyperlink{a00885_a0b33e09e362f7f99617ec9815808e539}{nodes}}[st.v].suffixIndex;}
-\DoxyCodeLine{00155     \}}
+\DoxyCodeLine{00142         \textcolor{keywordflow}{return} \mbox{\hyperlink{a00885_a0b33e09e362f7f99617ec9815808e539}{nodes}}[st.v].suffixIndex;}
+\DoxyCodeLine{00143     \}}
 
 \end{DoxyCode}
 
